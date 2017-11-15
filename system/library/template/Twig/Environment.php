@@ -106,7 +106,7 @@ class Twig_Environment
             'auto_reload' => null,
             'optimizations' => -1,
         ), $options);
-		$options['cache'] = false;
+        $options['cache'] = false;
 
         $this->debug = (bool) $options['debug'];
         $this->charset = strtoupper($options['charset']);

@@ -75,34 +75,40 @@ class __TwigTemplate_359d7352c20108ec2df0c167cb1067cfe5de3472add87684fe8925df6bb
         echo "\">";
         echo (isset($context["text_sitemap"]) ? $context["text_sitemap"] : null);
         echo "</a></li>
+          <li><a href=\"";
+        // line 20
+        echo (isset($context["partnership"]) ? $context["partnership"] : null);
+        echo "\">";
+        echo (isset($context["text_partnership"]) ? $context["text_partnership"] : null);
+        echo "</a></li>
         </ul>
       </div>
       <div class=\"col-sm-3\">
         <h5>";
-        // line 23
+        // line 24
         echo (isset($context["text_extra"]) ? $context["text_extra"] : null);
         echo "</h5>
         <ul class=\"list-unstyled\">
           <li><a href=\"";
-        // line 25
+        // line 26
         echo (isset($context["manufacturer"]) ? $context["manufacturer"] : null);
         echo "\">";
         echo (isset($context["text_manufacturer"]) ? $context["text_manufacturer"] : null);
         echo "</a></li>
           <li><a href=\"";
-        // line 26
+        // line 27
         echo (isset($context["voucher"]) ? $context["voucher"] : null);
         echo "\">";
         echo (isset($context["text_voucher"]) ? $context["text_voucher"] : null);
         echo "</a></li>
           <li><a href=\"";
-        // line 27
+        // line 28
         echo (isset($context["affiliate"]) ? $context["affiliate"] : null);
         echo "\">";
         echo (isset($context["text_affiliate"]) ? $context["text_affiliate"] : null);
         echo "</a></li>
           <li><a href=\"";
-        // line 28
+        // line 29
         echo (isset($context["special"]) ? $context["special"] : null);
         echo "\">";
         echo (isset($context["text_special"]) ? $context["text_special"] : null);
@@ -111,30 +117,30 @@ class __TwigTemplate_359d7352c20108ec2df0c167cb1067cfe5de3472add87684fe8925df6bb
       </div>
       <div class=\"col-sm-3\">
         <h5>";
-        // line 32
+        // line 33
         echo (isset($context["text_account"]) ? $context["text_account"] : null);
         echo "</h5>
         <ul class=\"list-unstyled\">
           <li><a href=\"";
-        // line 34
+        // line 35
         echo (isset($context["account"]) ? $context["account"] : null);
         echo "\">";
         echo (isset($context["text_account"]) ? $context["text_account"] : null);
         echo "</a></li>
           <li><a href=\"";
-        // line 35
+        // line 36
         echo (isset($context["order"]) ? $context["order"] : null);
         echo "\">";
         echo (isset($context["text_order"]) ? $context["text_order"] : null);
         echo "</a></li>
           <li><a href=\"";
-        // line 36
+        // line 37
         echo (isset($context["wishlist"]) ? $context["wishlist"] : null);
         echo "\">";
         echo (isset($context["text_wishlist"]) ? $context["text_wishlist"] : null);
         echo "</a></li>
           <li><a href=\"";
-        // line 37
+        // line 38
         echo (isset($context["newsletter"]) ? $context["newsletter"] : null);
         echo "\">";
         echo (isset($context["text_newsletter"]) ? $context["text_newsletter"] : null);
@@ -144,17 +150,17 @@ class __TwigTemplate_359d7352c20108ec2df0c167cb1067cfe5de3472add87684fe8925df6bb
     </div>
     <hr>
     <p>";
-        // line 42
+        // line 43
         echo (isset($context["powered"]) ? $context["powered"] : null);
         echo "</p>
   </div>
 </footer>
 ";
-        // line 45
+        // line 46
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["scripts"]) ? $context["scripts"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["script"]) {
-            // line 46
+            // line 47
             echo "<script src=\"";
             echo $context["script"];
             echo "\" type=\"text/javascript\"></script>
@@ -163,7 +169,7 @@ class __TwigTemplate_359d7352c20108ec2df0c167cb1067cfe5de3472add87684fe8925df6bb
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['script'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 48
+        // line 49
         echo "<!--
 OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
 Please donate via PayPal to donate@opencart.com
@@ -183,7 +189,7 @@ Please donate via PayPal to donate@opencart.com
 
     public function getDebugInfo()
     {
-        return array (  167 => 48,  158 => 46,  154 => 45,  148 => 42,  138 => 37,  132 => 36,  126 => 35,  120 => 34,  115 => 32,  106 => 28,  100 => 27,  94 => 26,  88 => 25,  83 => 23,  74 => 19,  68 => 18,  62 => 17,  57 => 15,  54 => 14,  49 => 11,  38 => 9,  34 => 8,  29 => 6,  26 => 5,  24 => 4,  19 => 1,);
+        return array (  173 => 49,  164 => 47,  160 => 46,  154 => 43,  144 => 38,  138 => 37,  132 => 36,  126 => 35,  121 => 33,  112 => 29,  106 => 28,  100 => 27,  94 => 26,  89 => 24,  80 => 20,  74 => 19,  68 => 18,  62 => 17,  57 => 15,  54 => 14,  49 => 11,  38 => 9,  34 => 8,  29 => 6,  26 => 5,  24 => 4,  19 => 1,);
     }
 }
 /* <footer>*/
@@ -205,6 +211,7 @@ Please donate via PayPal to donate@opencart.com
 /*           <li><a href="{{ contact }}">{{ text_contact }}</a></li>*/
 /*           <li><a href="{{ return }}">{{ text_return }}</a></li>*/
 /*           <li><a href="{{ sitemap }}">{{ text_sitemap }}</a></li>*/
+/*           <li><a href="{{ partnership }}">{{ text_partnership }}</a></li>*/
 /*         </ul>*/
 /*       </div>*/
 /*       <div class="col-sm-3">*/

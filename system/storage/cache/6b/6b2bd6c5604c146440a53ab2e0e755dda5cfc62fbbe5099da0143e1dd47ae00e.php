@@ -149,14 +149,15 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
         // line 49
         echo " </div>
               </div>
+
               <div class=\"form-group\">
                 <label class=\"col-sm-2 control-label\" for=\"input-meta-description\">";
-        // line 52
+        // line 53
         echo (isset($context["entry_meta_description"]) ? $context["entry_meta_description"] : null);
         echo "</label>
                 <div class=\"col-sm-10\">
                   <textarea name=\"config_meta_description\" rows=\"5\" placeholder=\"";
-        // line 54
+        // line 55
         echo (isset($context["entry_meta_description"]) ? $context["entry_meta_description"] : null);
         echo "\" id=\"input-meta-description\" class=\"form-control\">";
         echo (isset($context["config_meta_description"]) ? $context["config_meta_description"] : null);
@@ -165,12 +166,12 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
               </div>
               <div class=\"form-group\">
                 <label class=\"col-sm-2 control-label\" for=\"input-meta-keyword\">";
-        // line 58
+        // line 59
         echo (isset($context["entry_meta_keyword"]) ? $context["entry_meta_keyword"] : null);
         echo "</label>
                 <div class=\"col-sm-10\">
                   <textarea name=\"config_meta_keyword\" rows=\"5\" placeholder=\"";
-        // line 60
+        // line 61
         echo (isset($context["entry_meta_keyword"]) ? $context["entry_meta_keyword"] : null);
         echo "\" id=\"input-meta-keyword\" class=\"form-control\">";
         echo (isset($context["config_meta_keyword"]) ? $context["config_meta_keyword"] : null);
@@ -179,24 +180,24 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
               </div>
               <div class=\"form-group\">
                 <label class=\"col-sm-2 control-label\" for=\"input-theme\">";
-        // line 64
+        // line 65
         echo (isset($context["entry_theme"]) ? $context["entry_theme"] : null);
         echo "</label>
                 <div class=\"col-sm-10\">
                   <select name=\"config_theme\" id=\"input-theme\" class=\"form-control\">
                     
                     ";
-        // line 68
+        // line 69
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["themes"]) ? $context["themes"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["theme"]) {
-            // line 69
+            // line 70
             echo "                    ";
             if (($this->getAttribute($context["theme"], "value", array()) == (isset($context["config_theme"]) ? $context["config_theme"] : null))) {
-                // line 70
+                // line 71
                 echo "                    
                     <option value=\"";
-                // line 71
+                // line 72
                 echo $this->getAttribute($context["theme"], "value", array());
                 echo "\" selected=\"selected\">";
                 echo $this->getAttribute($context["theme"], "text", array());
@@ -204,10 +205,10 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                     
                     ";
             } else {
-                // line 74
+                // line 75
                 echo "                    
                     <option value=\"";
-                // line 75
+                // line 76
                 echo $this->getAttribute($context["theme"], "value", array());
                 echo "\">";
                 echo $this->getAttribute($context["theme"], "text", array());
@@ -215,13 +216,13 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                     
                     ";
             }
-            // line 78
+            // line 79
             echo "                    ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['theme'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 79
+        // line 80
         echo "                  
                   </select>
                   <br />
@@ -229,24 +230,24 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
               </div>
               <div class=\"form-group\">
                 <label class=\"col-sm-2 control-label\" for=\"input-layout\">";
-        // line 85
+        // line 86
         echo (isset($context["entry_layout"]) ? $context["entry_layout"] : null);
         echo "</label>
                 <div class=\"col-sm-10\">
                   <select name=\"config_layout_id\" id=\"input-layout\" class=\"form-control\">
                     
                     ";
-        // line 89
+        // line 90
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["layouts"]) ? $context["layouts"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["layout"]) {
-            // line 90
+            // line 91
             echo "                    ";
             if (($this->getAttribute($context["layout"], "layout_id", array()) == (isset($context["config_layout_id"]) ? $context["config_layout_id"] : null))) {
-                // line 91
+                // line 92
                 echo "                    
                     <option value=\"";
-                // line 92
+                // line 93
                 echo $this->getAttribute($context["layout"], "layout_id", array());
                 echo "\" selected=\"selected\">";
                 echo $this->getAttribute($context["layout"], "name", array());
@@ -254,10 +255,10 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                     
                     ";
             } else {
-                // line 95
+                // line 96
                 echo "                    
                     <option value=\"";
-                // line 96
+                // line 97
                 echo $this->getAttribute($context["layout"], "layout_id", array());
                 echo "\">";
                 echo $this->getAttribute($context["layout"], "name", array());
@@ -265,101 +266,137 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                     
                     ";
             }
-            // line 99
+            // line 100
             echo "                    ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['layout'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 100
+        // line 101
         echo "                  
                   </select>
                 </div>
               </div>
             </div>
             <div class=\"tab-pane\" id=\"tab-store\">
+              <div class=\"form-group\">
+                <label class=\"col-sm-2 control-label\" for=\"input-partnership-text\">
+                    ";
+        // line 109
+        echo (isset($context["entry_partnership_text"]) ? $context["entry_partnership_text"] : null);
+        echo "
+                </label>
+                <div class=\"col-sm-10\">
+                  <textarea name=\"config_partnership_text\" id=\"input-partnership-text\" rows=\"5\"
+                            placeholder=\"";
+        // line 113
+        echo (isset($context["entry_partnership_text"]) ? $context["entry_partnership_text"] : null);
+        echo "\" class=\"form-control\">";
+        echo (isset($context["config_partnership_text"]) ? $context["config_partnership_text"] : null);
+        echo "</textarea>
+                </div>
+              </div>
+              <div class=\"form-group\">
+                <label for=\"input-comment\" class=\"col-sm-2 control-label\">
+                    ";
+        // line 118
+        echo (isset($context["entry_partnership_tax"]) ? $context["entry_partnership_tax"] : null);
+        echo "
+                </label>
+                <div class=\"col-sm-10\">
+                  <textarea name=\"config_partnership_tax\" id=\"input-partnership-tax\" rows=\"5\"
+                            placeholder=\"";
+        // line 122
+        echo (isset($context["entry_partnership_tax"]) ? $context["entry_partnership_tax"] : null);
+        echo "\"
+                            class=\"form-control\">";
+        // line 123
+        echo (isset($context["config_partnership_tax"]) ? $context["config_partnership_tax"] : null);
+        echo "</textarea>
+                </div>
+              </div>
               <div class=\"form-group required\">
                 <label class=\"col-sm-2 control-label\" for=\"input-name\">";
-        // line 107
+        // line 127
         echo (isset($context["entry_name"]) ? $context["entry_name"] : null);
         echo "</label>
                 <div class=\"col-sm-10\">
                   <input type=\"text\" name=\"config_name\" value=\"";
-        // line 109
+        // line 129
         echo (isset($context["config_name"]) ? $context["config_name"] : null);
         echo "\" placeholder=\"";
         echo (isset($context["entry_name"]) ? $context["entry_name"] : null);
         echo "\" id=\"input-name\" class=\"form-control\" />
                   ";
-        // line 110
+        // line 130
         if ((isset($context["error_name"]) ? $context["error_name"] : null)) {
-            // line 111
+            // line 131
             echo "                  <div class=\"text-danger\">";
             echo (isset($context["error_name"]) ? $context["error_name"] : null);
             echo "</div>
                   ";
         }
-        // line 112
+        // line 132
         echo " </div>
               </div>
               <div class=\"form-group required\">
                 <label class=\"col-sm-2 control-label\" for=\"input-owner\">";
-        // line 115
+        // line 135
         echo (isset($context["entry_owner"]) ? $context["entry_owner"] : null);
         echo "</label>
                 <div class=\"col-sm-10\">
                   <input type=\"text\" name=\"config_owner\" value=\"";
-        // line 117
+        // line 137
         echo (isset($context["config_owner"]) ? $context["config_owner"] : null);
         echo "\" placeholder=\"";
         echo (isset($context["entry_owner"]) ? $context["entry_owner"] : null);
         echo "\" id=\"input-owner\" class=\"form-control\" />
                   ";
-        // line 118
+        // line 138
         if ((isset($context["error_owner"]) ? $context["error_owner"] : null)) {
-            // line 119
+            // line 139
             echo "                  <div class=\"text-danger\">";
             echo (isset($context["error_owner"]) ? $context["error_owner"] : null);
             echo "</div>
                   ";
         }
-        // line 120
+        // line 140
         echo " </div>
               </div>
               <div class=\"form-group required\">
                 <label class=\"col-sm-2 control-label\" for=\"input-address\">";
-        // line 123
+        // line 143
         echo (isset($context["entry_address"]) ? $context["entry_address"] : null);
         echo "</label>
                 <div class=\"col-sm-10\">
                   <textarea name=\"config_address\" placeholder=\"";
-        // line 125
+        // line 145
         echo (isset($context["entry_address"]) ? $context["entry_address"] : null);
         echo "\" rows=\"5\" id=\"input-address\" class=\"form-control\">";
         echo (isset($context["config_address"]) ? $context["config_address"] : null);
         echo "</textarea>
                   ";
-        // line 126
+        // line 146
         if ((isset($context["error_address"]) ? $context["error_address"] : null)) {
-            // line 127
+            // line 147
             echo "                  <div class=\"text-danger\">";
             echo (isset($context["error_address"]) ? $context["error_address"] : null);
             echo "</div>
                   ";
         }
-        // line 128
+        // line 148
         echo " </div>
               </div>
               <div class=\"form-group\">
                 <label class=\"col-sm-2 control-label\" for=\"input-geocode\"><span data-toggle=\"tooltip\" data-container=\"#tab-general\" title=\"";
-        // line 131
+        // line 151
         echo (isset($context["help_geocode"]) ? $context["help_geocode"] : null);
         echo "\">";
         echo (isset($context["entry_geocode"]) ? $context["entry_geocode"] : null);
         echo "</span></label>
                 <div class=\"col-sm-10\">
                   <input type=\"text\" name=\"config_geocode\" value=\"";
-        // line 133
+        // line 153
         echo (isset($context["config_geocode"]) ? $context["config_geocode"] : null);
         echo "\" placeholder=\"";
         echo (isset($context["entry_geocode"]) ? $context["entry_geocode"] : null);
@@ -368,60 +405,60 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
               </div>
               <div class=\"form-group required\">
                 <label class=\"col-sm-2 control-label\" for=\"input-email\">";
-        // line 137
+        // line 157
         echo (isset($context["entry_email"]) ? $context["entry_email"] : null);
         echo "</label>
                 <div class=\"col-sm-10\">
                   <input type=\"text\" name=\"config_email\" value=\"";
-        // line 139
+        // line 159
         echo (isset($context["config_email"]) ? $context["config_email"] : null);
         echo "\" placeholder=\"";
         echo (isset($context["entry_email"]) ? $context["entry_email"] : null);
         echo "\" id=\"input-email\" class=\"form-control\" />
                   ";
-        // line 140
+        // line 160
         if ((isset($context["error_email"]) ? $context["error_email"] : null)) {
-            // line 141
+            // line 161
             echo "                  <div class=\"text-danger\">";
             echo (isset($context["error_email"]) ? $context["error_email"] : null);
             echo "</div>
                   ";
         }
-        // line 142
+        // line 162
         echo " </div>
               </div>
               <div class=\"form-group required\">
                 <label class=\"col-sm-2 control-label\" for=\"input-telephone\">";
-        // line 145
+        // line 165
         echo (isset($context["entry_telephone"]) ? $context["entry_telephone"] : null);
         echo "</label>
                 <div class=\"col-sm-10\">
                   <input type=\"text\" name=\"config_telephone\" value=\"";
-        // line 147
+        // line 167
         echo (isset($context["config_telephone"]) ? $context["config_telephone"] : null);
         echo "\" placeholder=\"";
         echo (isset($context["entry_telephone"]) ? $context["entry_telephone"] : null);
         echo "\" id=\"input-telephone\" class=\"form-control\" />
                   ";
-        // line 148
+        // line 168
         if ((isset($context["error_telephone"]) ? $context["error_telephone"] : null)) {
-            // line 149
+            // line 169
             echo "                  <div class=\"text-danger\">";
             echo (isset($context["error_telephone"]) ? $context["error_telephone"] : null);
             echo "</div>
                   ";
         }
-        // line 150
+        // line 170
         echo " </div>
               </div>
               <div class=\"form-group\">
                 <label class=\"col-sm-2 control-label\" for=\"input-fax\">";
-        // line 153
+        // line 173
         echo (isset($context["entry_fax"]) ? $context["entry_fax"] : null);
         echo "</label>
                 <div class=\"col-sm-10\">
                   <input type=\"text\" name=\"config_fax\" value=\"";
-        // line 155
+        // line 175
         echo (isset($context["config_fax"]) ? $context["config_fax"] : null);
         echo "\" placeholder=\"";
         echo (isset($context["entry_fax"]) ? $context["entry_fax"] : null);
@@ -430,31 +467,31 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
               </div>              
               <div class=\"form-group\">
                 <label class=\"col-sm-2 control-label\" for=\"input-image\">";
-        // line 159
+        // line 179
         echo (isset($context["entry_image"]) ? $context["entry_image"] : null);
         echo "</label>
                 <div class=\"col-sm-10\"><a href=\"\" id=\"thumb-image\" data-toggle=\"image\" class=\"img-thumbnail\"><img src=\"";
-        // line 160
+        // line 180
         echo (isset($context["thumb"]) ? $context["thumb"] : null);
         echo "\" alt=\"\" title=\"\" data-placeholder=\"";
         echo (isset($context["placeholder"]) ? $context["placeholder"] : null);
         echo "\" /></a>
                   <input type=\"hidden\" name=\"config_image\" value=\"";
-        // line 161
+        // line 181
         echo (isset($context["config_image"]) ? $context["config_image"] : null);
         echo "\" id=\"input-image\" />
                 </div>
               </div>
               <div class=\"form-group\">
                 <label class=\"col-sm-2 control-label\" for=\"input-open\"><span data-toggle=\"tooltip\" data-container=\"#tab-general\" title=\"";
-        // line 165
+        // line 185
         echo (isset($context["help_open"]) ? $context["help_open"] : null);
         echo "\">";
         echo (isset($context["entry_open"]) ? $context["entry_open"] : null);
         echo "</span></label>
                 <div class=\"col-sm-10\">
                   <textarea name=\"config_open\" rows=\"5\" placeholder=\"";
-        // line 167
+        // line 187
         echo (isset($context["entry_open"]) ? $context["entry_open"] : null);
         echo "\" id=\"input-open\" class=\"form-control\">";
         echo (isset($context["config_open"]) ? $context["config_open"] : null);
@@ -463,14 +500,14 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
               </div>
               <div class=\"form-group\">
                 <label class=\"col-sm-2 control-label\" for=\"input-comment\"><span data-toggle=\"tooltip\" data-container=\"#tab-general\" title=\"";
-        // line 171
+        // line 191
         echo (isset($context["help_comment"]) ? $context["help_comment"] : null);
         echo "\">";
         echo (isset($context["entry_comment"]) ? $context["entry_comment"] : null);
         echo "</span></label>
                 <div class=\"col-sm-10\">
                   <textarea name=\"config_comment\" rows=\"5\" placeholder=\"";
-        // line 173
+        // line 193
         echo (isset($context["entry_comment"]) ? $context["entry_comment"] : null);
         echo "\" id=\"input-comment\" class=\"form-control\">";
         echo (isset($context["config_comment"]) ? $context["config_comment"] : null);
@@ -478,47 +515,47 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                 </div>
               </div>
               ";
-        // line 176
+        // line 196
         if ((isset($context["locations"]) ? $context["locations"] : null)) {
-            // line 177
+            // line 197
             echo "              <div class=\"form-group\">
                 <label class=\"col-sm-2 control-label\"><span data-toggle=\"tooltip\" data-container=\"#tab-general\" title=\"";
-            // line 178
+            // line 198
             echo (isset($context["help_location"]) ? $context["help_location"] : null);
             echo "\">";
             echo (isset($context["entry_location"]) ? $context["entry_location"] : null);
             echo "</span></label>
                 <div class=\"col-sm-10\"> ";
-            // line 179
+            // line 199
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable((isset($context["locations"]) ? $context["locations"] : null));
             foreach ($context['_seq'] as $context["_key"] => $context["location"]) {
-                // line 180
+                // line 200
                 echo "                  <div class=\"checkbox\">
                     <label> ";
-                // line 181
+                // line 201
                 if (twig_in_filter($this->getAttribute($context["location"], "location_id", array()), (isset($context["config_location"]) ? $context["config_location"] : null))) {
-                    // line 182
+                    // line 202
                     echo "                      <input type=\"checkbox\" name=\"config_location[]\" value=\"";
                     echo $this->getAttribute($context["location"], "location_id", array());
                     echo "\" checked=\"checked\" />
                       ";
-                    // line 183
+                    // line 203
                     echo $this->getAttribute($context["location"], "name", array());
                     echo "
                       ";
                 } else {
-                    // line 185
+                    // line 205
                     echo "                      <input type=\"checkbox\" name=\"config_location[]\" value=\"";
                     echo $this->getAttribute($context["location"], "location_id", array());
                     echo "\" />
                       ";
-                    // line 186
+                    // line 206
                     echo $this->getAttribute($context["location"], "name", array());
                     echo "
                       ";
                 }
-                // line 187
+                // line 207
                 echo " </label>
                   </div>
                   ";
@@ -526,34 +563,34 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['location'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 189
+            // line 209
             echo " </div>
               </div>
               ";
         }
-        // line 191
+        // line 211
         echo " </div>
             <div class=\"tab-pane\" id=\"tab-local\">
               <div class=\"form-group\">
                 <label class=\"col-sm-2 control-label\" for=\"input-country\">";
-        // line 194
+        // line 214
         echo (isset($context["entry_country"]) ? $context["entry_country"] : null);
         echo "</label>
                 <div class=\"col-sm-10\">
                   <select name=\"config_country_id\" id=\"input-country\" class=\"form-control\">
                     
                     ";
-        // line 198
+        // line 218
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["countries"]) ? $context["countries"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["country"]) {
-            // line 199
+            // line 219
             echo "                    ";
             if (($this->getAttribute($context["country"], "country_id", array()) == (isset($context["config_country_id"]) ? $context["config_country_id"] : null))) {
-                // line 200
+                // line 220
                 echo "                    
                     <option value=\"";
-                // line 201
+                // line 221
                 echo $this->getAttribute($context["country"], "country_id", array());
                 echo "\" selected=\"selected\">";
                 echo $this->getAttribute($context["country"], "name", array());
@@ -561,10 +598,10 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                     
                     ";
             } else {
-                // line 204
+                // line 224
                 echo "                    
                     <option value=\"";
-                // line 205
+                // line 225
                 echo $this->getAttribute($context["country"], "country_id", array());
                 echo "\">";
                 echo $this->getAttribute($context["country"], "name", array());
@@ -572,20 +609,20 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                     
                     ";
             }
-            // line 208
+            // line 228
             echo "                    ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['country'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 209
+        // line 229
         echo "                  
                   </select>
                 </div>
               </div>
               <div class=\"form-group\">
                 <label class=\"col-sm-2 control-label\" for=\"input-zone\">";
-        // line 214
+        // line 234
         echo (isset($context["entry_zone"]) ? $context["entry_zone"] : null);
         echo "</label>
                 <div class=\"col-sm-10\">
@@ -595,60 +632,11 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
               </div>
               <div class=\"form-group\">
                 <label class=\"col-sm-2 control-label\" for=\"input-language\">";
-        // line 221
+        // line 241
         echo (isset($context["entry_language"]) ? $context["entry_language"] : null);
         echo "</label>
                 <div class=\"col-sm-10\">
                   <select name=\"config_language\" id=\"input-language\" class=\"form-control\">
-                    
-                    ";
-        // line 225
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["languages"]) ? $context["languages"] : null));
-        foreach ($context['_seq'] as $context["_key"] => $context["language"]) {
-            // line 226
-            echo "                    ";
-            if (($this->getAttribute($context["language"], "code", array()) == (isset($context["config_language"]) ? $context["config_language"] : null))) {
-                // line 227
-                echo "                    
-                    <option value=\"";
-                // line 228
-                echo $this->getAttribute($context["language"], "code", array());
-                echo "\" selected=\"selected\">";
-                echo $this->getAttribute($context["language"], "name", array());
-                echo "</option>
-                    
-                    ";
-            } else {
-                // line 231
-                echo "                    
-                    <option value=\"";
-                // line 232
-                echo $this->getAttribute($context["language"], "code", array());
-                echo "\">";
-                echo $this->getAttribute($context["language"], "name", array());
-                echo "</option>
-                    
-                    ";
-            }
-            // line 235
-            echo "                    ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['language'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 236
-        echo "                  
-                  </select>
-                </div>
-              </div>
-              <div class=\"form-group\">
-                <label class=\"col-sm-2 control-label\" for=\"input-admin-language\">";
-        // line 241
-        echo (isset($context["entry_admin_language"]) ? $context["entry_admin_language"] : null);
-        echo "</label>
-                <div class=\"col-sm-10\">
-                  <select name=\"config_admin_language\" id=\"input-admin-language\" class=\"form-control\">
                     
                     ";
         // line 245
@@ -657,7 +645,7 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
         foreach ($context['_seq'] as $context["_key"] => $context["language"]) {
             // line 246
             echo "                    ";
-            if (($this->getAttribute($context["language"], "code", array()) == (isset($context["config_admin_language"]) ? $context["config_admin_language"] : null))) {
+            if (($this->getAttribute($context["language"], "code", array()) == (isset($context["config_language"]) ? $context["config_language"] : null))) {
                 // line 247
                 echo "                    
                     <option value=\"";
@@ -692,30 +680,28 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                 </div>
               </div>
               <div class=\"form-group\">
-                <label class=\"col-sm-2 control-label\" for=\"input-currency\"><span data-toggle=\"tooltip\" title=\"";
+                <label class=\"col-sm-2 control-label\" for=\"input-admin-language\">";
         // line 261
-        echo (isset($context["help_currency"]) ? $context["help_currency"] : null);
-        echo "\">";
-        echo (isset($context["entry_currency"]) ? $context["entry_currency"] : null);
-        echo "</span></label>
+        echo (isset($context["entry_admin_language"]) ? $context["entry_admin_language"] : null);
+        echo "</label>
                 <div class=\"col-sm-10\">
-                  <select name=\"config_currency\" id=\"input-currency\" class=\"form-control\">
+                  <select name=\"config_admin_language\" id=\"input-admin-language\" class=\"form-control\">
                     
                     ";
         // line 265
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["currencies"]) ? $context["currencies"] : null));
-        foreach ($context['_seq'] as $context["_key"] => $context["currency"]) {
+        $context['_seq'] = twig_ensure_traversable((isset($context["languages"]) ? $context["languages"] : null));
+        foreach ($context['_seq'] as $context["_key"] => $context["language"]) {
             // line 266
             echo "                    ";
-            if (($this->getAttribute($context["currency"], "code", array()) == (isset($context["config_currency"]) ? $context["config_currency"] : null))) {
+            if (($this->getAttribute($context["language"], "code", array()) == (isset($context["config_admin_language"]) ? $context["config_admin_language"] : null))) {
                 // line 267
                 echo "                    
                     <option value=\"";
                 // line 268
-                echo $this->getAttribute($context["currency"], "code", array());
+                echo $this->getAttribute($context["language"], "code", array());
                 echo "\" selected=\"selected\">";
-                echo $this->getAttribute($context["currency"], "title", array());
+                echo $this->getAttribute($context["language"], "name", array());
                 echo "</option>
                     
                     ";
@@ -724,9 +710,9 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                 echo "                    
                     <option value=\"";
                 // line 272
-                echo $this->getAttribute($context["currency"], "code", array());
+                echo $this->getAttribute($context["language"], "code", array());
                 echo "\">";
-                echo $this->getAttribute($context["currency"], "title", array());
+                echo $this->getAttribute($context["language"], "name", array());
                 echo "</option>
                     
                     ";
@@ -735,7 +721,7 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
             echo "                    ";
         }
         $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['currency'], $context['_parent'], $context['loop']);
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['language'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 276
         echo "                  
@@ -743,129 +729,131 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                 </div>
               </div>
               <div class=\"form-group\">
-                <label class=\"col-sm-2 control-label\"><span data-toggle=\"tooltip\" title=\"";
+                <label class=\"col-sm-2 control-label\" for=\"input-currency\"><span data-toggle=\"tooltip\" title=\"";
         // line 281
+        echo (isset($context["help_currency"]) ? $context["help_currency"] : null);
+        echo "\">";
+        echo (isset($context["entry_currency"]) ? $context["entry_currency"] : null);
+        echo "</span></label>
+                <div class=\"col-sm-10\">
+                  <select name=\"config_currency\" id=\"input-currency\" class=\"form-control\">
+                    
+                    ";
+        // line 285
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["currencies"]) ? $context["currencies"] : null));
+        foreach ($context['_seq'] as $context["_key"] => $context["currency"]) {
+            // line 286
+            echo "                    ";
+            if (($this->getAttribute($context["currency"], "code", array()) == (isset($context["config_currency"]) ? $context["config_currency"] : null))) {
+                // line 287
+                echo "                    
+                    <option value=\"";
+                // line 288
+                echo $this->getAttribute($context["currency"], "code", array());
+                echo "\" selected=\"selected\">";
+                echo $this->getAttribute($context["currency"], "title", array());
+                echo "</option>
+                    
+                    ";
+            } else {
+                // line 291
+                echo "                    
+                    <option value=\"";
+                // line 292
+                echo $this->getAttribute($context["currency"], "code", array());
+                echo "\">";
+                echo $this->getAttribute($context["currency"], "title", array());
+                echo "</option>
+                    
+                    ";
+            }
+            // line 295
+            echo "                    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['currency'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 296
+        echo "                  
+                  </select>
+                </div>
+              </div>
+              <div class=\"form-group\">
+                <label class=\"col-sm-2 control-label\"><span data-toggle=\"tooltip\" title=\"";
+        // line 301
         echo (isset($context["help_currency_auto"]) ? $context["help_currency_auto"] : null);
         echo "\">";
         echo (isset($context["entry_currency_auto"]) ? $context["entry_currency_auto"] : null);
         echo "</span></label>
                 <div class=\"col-sm-10\">
                   <label class=\"radio-inline\"> ";
-        // line 283
+        // line 303
         if ((isset($context["config_currency_auto"]) ? $context["config_currency_auto"] : null)) {
-            // line 284
+            // line 304
             echo "                    <input type=\"radio\" name=\"config_currency_auto\" value=\"1\" checked=\"checked\" />
                     ";
-            // line 285
+            // line 305
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                     ";
         } else {
-            // line 287
+            // line 307
             echo "                    <input type=\"radio\" name=\"config_currency_auto\" value=\"1\" />
                     ";
-            // line 288
+            // line 308
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                     ";
         }
-        // line 289
+        // line 309
         echo " </label>
                   <label class=\"radio-inline\"> ";
-        // line 290
+        // line 310
         if ( !(isset($context["config_currency_auto"]) ? $context["config_currency_auto"] : null)) {
-            // line 291
+            // line 311
             echo "                    <input type=\"radio\" name=\"config_currency_auto\" value=\"0\" checked=\"checked\" />
                     ";
-            // line 292
+            // line 312
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                     ";
         } else {
-            // line 294
+            // line 314
             echo "                    <input type=\"radio\" name=\"config_currency_auto\" value=\"0\" />
                     ";
-            // line 295
+            // line 315
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                     ";
         }
-        // line 296
+        // line 316
         echo " </label>
                 </div>
               </div>
               <div class=\"form-group\">
                 <label class=\"col-sm-2 control-label\" for=\"input-length-class\">";
-        // line 300
+        // line 320
         echo (isset($context["entry_length_class"]) ? $context["entry_length_class"] : null);
         echo "</label>
                 <div class=\"col-sm-10\">
                   <select name=\"config_length_class_id\" id=\"input-length-class\" class=\"form-control\">
                     
                     ";
-        // line 304
+        // line 324
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["length_classes"]) ? $context["length_classes"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["length_class"]) {
-            // line 305
-            echo "                    ";
-            if (($this->getAttribute($context["length_class"], "length_class_id", array()) == (isset($context["config_length_class_id"]) ? $context["config_length_class_id"] : null))) {
-                // line 306
-                echo "                    
-                    <option value=\"";
-                // line 307
-                echo $this->getAttribute($context["length_class"], "length_class_id", array());
-                echo "\" selected=\"selected\">";
-                echo $this->getAttribute($context["length_class"], "title", array());
-                echo "</option>
-                    
-                    ";
-            } else {
-                // line 310
-                echo "                    
-                    <option value=\"";
-                // line 311
-                echo $this->getAttribute($context["length_class"], "length_class_id", array());
-                echo "\">";
-                echo $this->getAttribute($context["length_class"], "title", array());
-                echo "</option>
-                    
-                    ";
-            }
-            // line 314
-            echo "                    ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['length_class'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 315
-        echo "                  
-                  </select>
-                </div>
-              </div>
-              <div class=\"form-group\">
-                <label class=\"col-sm-2 control-label\" for=\"input-weight-class\">";
-        // line 320
-        echo (isset($context["entry_weight_class"]) ? $context["entry_weight_class"] : null);
-        echo "</label>
-                <div class=\"col-sm-10\">
-                  <select name=\"config_weight_class_id\" id=\"input-weight-class\" class=\"form-control\">
-                    
-                    ";
-        // line 324
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["weight_classes"]) ? $context["weight_classes"] : null));
-        foreach ($context['_seq'] as $context["_key"] => $context["weight_class"]) {
             // line 325
             echo "                    ";
-            if (($this->getAttribute($context["weight_class"], "weight_class_id", array()) == (isset($context["config_weight_class_id"]) ? $context["config_weight_class_id"] : null))) {
+            if (($this->getAttribute($context["length_class"], "length_class_id", array()) == (isset($context["config_length_class_id"]) ? $context["config_length_class_id"] : null))) {
                 // line 326
                 echo "                    
                     <option value=\"";
                 // line 327
-                echo $this->getAttribute($context["weight_class"], "weight_class_id", array());
+                echo $this->getAttribute($context["length_class"], "length_class_id", array());
                 echo "\" selected=\"selected\">";
-                echo $this->getAttribute($context["weight_class"], "title", array());
+                echo $this->getAttribute($context["length_class"], "title", array());
                 echo "</option>
                     
                     ";
@@ -874,9 +862,9 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                 echo "                    
                     <option value=\"";
                 // line 331
-                echo $this->getAttribute($context["weight_class"], "weight_class_id", array());
+                echo $this->getAttribute($context["length_class"], "length_class_id", array());
                 echo "\">";
-                echo $this->getAttribute($context["weight_class"], "title", array());
+                echo $this->getAttribute($context["length_class"], "title", array());
                 echo "</option>
                     
                     ";
@@ -885,9 +873,58 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
             echo "                    ";
         }
         $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['weight_class'], $context['_parent'], $context['loop']);
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['length_class'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 335
+        echo "                  
+                  </select>
+                </div>
+              </div>
+              <div class=\"form-group\">
+                <label class=\"col-sm-2 control-label\" for=\"input-weight-class\">";
+        // line 340
+        echo (isset($context["entry_weight_class"]) ? $context["entry_weight_class"] : null);
+        echo "</label>
+                <div class=\"col-sm-10\">
+                  <select name=\"config_weight_class_id\" id=\"input-weight-class\" class=\"form-control\">
+                    
+                    ";
+        // line 344
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["weight_classes"]) ? $context["weight_classes"] : null));
+        foreach ($context['_seq'] as $context["_key"] => $context["weight_class"]) {
+            // line 345
+            echo "                    ";
+            if (($this->getAttribute($context["weight_class"], "weight_class_id", array()) == (isset($context["config_weight_class_id"]) ? $context["config_weight_class_id"] : null))) {
+                // line 346
+                echo "                    
+                    <option value=\"";
+                // line 347
+                echo $this->getAttribute($context["weight_class"], "weight_class_id", array());
+                echo "\" selected=\"selected\">";
+                echo $this->getAttribute($context["weight_class"], "title", array());
+                echo "</option>
+                    
+                    ";
+            } else {
+                // line 350
+                echo "                    
+                    <option value=\"";
+                // line 351
+                echo $this->getAttribute($context["weight_class"], "weight_class_id", array());
+                echo "\">";
+                echo $this->getAttribute($context["weight_class"], "title", array());
+                echo "</option>
+                    
+                    ";
+            }
+            // line 354
+            echo "                    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['weight_class'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 355
         echo "                  
                   </select>
                 </div>
@@ -896,314 +933,314 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
             <div class=\"tab-pane\" id=\"tab-option\">
               <fieldset>
                 <legend>";
-        // line 342
+        // line 362
         echo (isset($context["text_product"]) ? $context["text_product"] : null);
         echo "</legend>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\"><span data-toggle=\"tooltip\" title=\"";
-        // line 344
+        // line 364
         echo (isset($context["help_product_count"]) ? $context["help_product_count"] : null);
         echo "\">";
         echo (isset($context["entry_product_count"]) ? $context["entry_product_count"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <label class=\"radio-inline\"> ";
-        // line 346
+        // line 366
         if ((isset($context["config_product_count"]) ? $context["config_product_count"] : null)) {
-            // line 347
+            // line 367
             echo "                      <input type=\"radio\" name=\"config_product_count\" value=\"1\" checked=\"checked\" />
                       ";
-            // line 348
+            // line 368
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         } else {
-            // line 350
+            // line 370
             echo "                      <input type=\"radio\" name=\"config_product_count\" value=\"1\" />
                       ";
-            // line 351
+            // line 371
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         }
-        // line 352
+        // line 372
         echo " </label>
                     <label class=\"radio-inline\"> ";
-        // line 353
+        // line 373
         if ( !(isset($context["config_product_count"]) ? $context["config_product_count"] : null)) {
-            // line 354
+            // line 374
             echo "                      <input type=\"radio\" name=\"config_product_count\" value=\"0\" checked=\"checked\" />
                       ";
-            // line 355
+            // line 375
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         } else {
-            // line 357
+            // line 377
             echo "                      <input type=\"radio\" name=\"config_product_count\" value=\"0\" />
                       ";
-            // line 358
+            // line 378
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         }
-        // line 359
+        // line 379
         echo " </label>
                   </div>
                 </div>
                 <div class=\"form-group required\">
                   <label class=\"col-sm-2 control-label\" for=\"input-admin-limit\"><span data-toggle=\"tooltip\" title=\"";
-        // line 363
+        // line 383
         echo (isset($context["help_limit_admin"]) ? $context["help_limit_admin"] : null);
         echo "\">";
         echo (isset($context["entry_limit_admin"]) ? $context["entry_limit_admin"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <input type=\"text\" name=\"config_limit_admin\" value=\"";
-        // line 365
+        // line 385
         echo (isset($context["config_limit_admin"]) ? $context["config_limit_admin"] : null);
         echo "\" placeholder=\"";
         echo (isset($context["entry_limit_admin"]) ? $context["entry_limit_admin"] : null);
         echo "\" id=\"input-admin-limit\" class=\"form-control\" />
                     ";
-        // line 366
+        // line 386
         if ((isset($context["error_limit_admin"]) ? $context["error_limit_admin"] : null)) {
-            // line 367
+            // line 387
             echo "                    <div class=\"text-danger\">";
             echo (isset($context["error_limit_admin"]) ? $context["error_limit_admin"] : null);
             echo "</div>
                     ";
         }
-        // line 368
+        // line 388
         echo " </div>
                 </div>
               </fieldset>
               <fieldset>
                 <legend>";
-        // line 372
+        // line 392
         echo (isset($context["text_review"]) ? $context["text_review"] : null);
         echo "</legend>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\"><span data-toggle=\"tooltip\" title=\"";
-        // line 374
+        // line 394
         echo (isset($context["help_review"]) ? $context["help_review"] : null);
         echo "\">";
         echo (isset($context["entry_review"]) ? $context["entry_review"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <label class=\"radio-inline\"> ";
-        // line 376
+        // line 396
         if ((isset($context["config_review_status"]) ? $context["config_review_status"] : null)) {
-            // line 377
+            // line 397
             echo "                      <input type=\"radio\" name=\"config_review_status\" value=\"1\" checked=\"checked\" />
                       ";
-            // line 378
+            // line 398
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         } else {
-            // line 380
+            // line 400
             echo "                      <input type=\"radio\" name=\"config_review_status\" value=\"1\" />
                       ";
-            // line 381
+            // line 401
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         }
-        // line 382
+        // line 402
         echo " </label>
                     <label class=\"radio-inline\"> ";
-        // line 383
+        // line 403
         if ( !(isset($context["config_review_status"]) ? $context["config_review_status"] : null)) {
-            // line 384
+            // line 404
             echo "                      <input type=\"radio\" name=\"config_review_status\" value=\"0\" checked=\"checked\" />
                       ";
-            // line 385
+            // line 405
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         } else {
-            // line 387
+            // line 407
             echo "                      <input type=\"radio\" name=\"config_review_status\" value=\"0\" />
                       ";
-            // line 388
+            // line 408
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         }
-        // line 389
+        // line 409
         echo " </label>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\"><span data-toggle=\"tooltip\" title=\"";
-        // line 393
+        // line 413
         echo (isset($context["help_review_guest"]) ? $context["help_review_guest"] : null);
         echo "\">";
         echo (isset($context["entry_review_guest"]) ? $context["entry_review_guest"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <label class=\"radio-inline\"> ";
-        // line 395
+        // line 415
         if ((isset($context["config_review_guest"]) ? $context["config_review_guest"] : null)) {
-            // line 396
+            // line 416
             echo "                      <input type=\"radio\" name=\"config_review_guest\" value=\"1\" checked=\"checked\" />
                       ";
-            // line 397
+            // line 417
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         } else {
-            // line 399
+            // line 419
             echo "                      <input type=\"radio\" name=\"config_review_guest\" value=\"1\" />
                       ";
-            // line 400
+            // line 420
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         }
-        // line 401
+        // line 421
         echo " </label>
                     <label class=\"radio-inline\"> ";
-        // line 402
+        // line 422
         if ( !(isset($context["config_review_guest"]) ? $context["config_review_guest"] : null)) {
-            // line 403
+            // line 423
             echo "                      <input type=\"radio\" name=\"config_review_guest\" value=\"0\" checked=\"checked\" />
                       ";
-            // line 404
+            // line 424
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         } else {
-            // line 406
+            // line 426
             echo "                      <input type=\"radio\" name=\"config_review_guest\" value=\"0\" />
                       ";
-            // line 407
+            // line 427
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         }
-        // line 408
+        // line 428
         echo " </label>
                   </div>
                 </div>
               </fieldset>
               <fieldset>
                 <legend>";
-        // line 413
+        // line 433
         echo (isset($context["text_voucher"]) ? $context["text_voucher"] : null);
         echo "</legend>
                 <div class=\"form-group required\">
                   <label class=\"col-sm-2 control-label\" for=\"input-voucher-min\"><span data-toggle=\"tooltip\" title=\"";
-        // line 415
+        // line 435
         echo (isset($context["help_voucher_min"]) ? $context["help_voucher_min"] : null);
         echo "\">";
         echo (isset($context["entry_voucher_min"]) ? $context["entry_voucher_min"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <input type=\"text\" name=\"config_voucher_min\" value=\"";
-        // line 417
+        // line 437
         echo (isset($context["config_voucher_min"]) ? $context["config_voucher_min"] : null);
         echo "\" placeholder=\"";
         echo (isset($context["entry_voucher_min"]) ? $context["entry_voucher_min"] : null);
         echo "\" id=\"input-voucher-min\" class=\"form-control\" />
                     ";
-        // line 418
+        // line 438
         if ((isset($context["error_voucher_min"]) ? $context["error_voucher_min"] : null)) {
-            // line 419
+            // line 439
             echo "                    <div class=\"text-danger\">";
             echo (isset($context["error_voucher_min"]) ? $context["error_voucher_min"] : null);
             echo "</div>
                     ";
         }
-        // line 420
+        // line 440
         echo " </div>
                 </div>
                 <div class=\"form-group required\">
                   <label class=\"col-sm-2 control-label\" for=\"input-voucher-max\"><span data-toggle=\"tooltip\" title=\"";
-        // line 423
+        // line 443
         echo (isset($context["help_voucher_max"]) ? $context["help_voucher_max"] : null);
         echo "\">";
         echo (isset($context["entry_voucher_max"]) ? $context["entry_voucher_max"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <input type=\"text\" name=\"config_voucher_max\" value=\"";
-        // line 425
+        // line 445
         echo (isset($context["config_voucher_max"]) ? $context["config_voucher_max"] : null);
         echo "\" placeholder=\"";
         echo (isset($context["entry_voucher_max"]) ? $context["entry_voucher_max"] : null);
         echo "\" id=\"input-voucher-max\" class=\"form-control\" />
                     ";
-        // line 426
+        // line 446
         if ((isset($context["error_voucher_max"]) ? $context["error_voucher_max"] : null)) {
-            // line 427
+            // line 447
             echo "                    <div class=\"text-danger\">";
             echo (isset($context["error_voucher_max"]) ? $context["error_voucher_max"] : null);
             echo "</div>
                     ";
         }
-        // line 428
+        // line 448
         echo " </div>
                 </div>
               </fieldset>
               <fieldset>
                 <legend>";
-        // line 432
+        // line 452
         echo (isset($context["text_tax"]) ? $context["text_tax"] : null);
         echo "</legend>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\">";
-        // line 434
+        // line 454
         echo (isset($context["entry_tax"]) ? $context["entry_tax"] : null);
         echo "</label>
                   <div class=\"col-sm-10\">
                     <label class=\"radio-inline\"> ";
-        // line 436
+        // line 456
         if ((isset($context["config_tax"]) ? $context["config_tax"] : null)) {
-            // line 437
+            // line 457
             echo "                      <input type=\"radio\" name=\"config_tax\" value=\"1\" checked=\"checked\" />
                       ";
-            // line 438
+            // line 458
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         } else {
-            // line 440
+            // line 460
             echo "                      <input type=\"radio\" name=\"config_tax\" value=\"1\" />
                       ";
-            // line 441
+            // line 461
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         }
-        // line 442
+        // line 462
         echo " </label>
                     <label class=\"radio-inline\"> ";
-        // line 443
+        // line 463
         if ( !(isset($context["config_tax"]) ? $context["config_tax"] : null)) {
-            // line 444
+            // line 464
             echo "                      <input type=\"radio\" name=\"config_tax\" value=\"0\" checked=\"checked\" />
                       ";
-            // line 445
+            // line 465
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         } else {
-            // line 447
+            // line 467
             echo "                      <input type=\"radio\" name=\"config_tax\" value=\"0\" />
                       ";
-            // line 448
+            // line 468
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         }
-        // line 449
+        // line 469
         echo " </label>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-tax-default\"><span data-toggle=\"tooltip\" title=\"";
-        // line 453
+        // line 473
         echo (isset($context["help_tax_default"]) ? $context["help_tax_default"] : null);
         echo "\">";
         echo (isset($context["entry_tax_default"]) ? $context["entry_tax_default"] : null);
@@ -1211,60 +1248,60 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                   <div class=\"col-sm-10\">
                     <select name=\"config_tax_default\" id=\"input-tax-default\" class=\"form-control\">
                       <option value=\"\">";
-        // line 456
+        // line 476
         echo (isset($context["text_none"]) ? $context["text_none"] : null);
         echo "</option>
                       
                       ";
-        // line 458
+        // line 478
         if (((isset($context["config_tax_default"]) ? $context["config_tax_default"] : null) == "shipping")) {
-            // line 459
+            // line 479
             echo "                      
                       <option value=\"shipping\" selected=\"selected\">";
-            // line 460
+            // line 480
             echo (isset($context["text_shipping"]) ? $context["text_shipping"] : null);
             echo "</option>
                       
                       ";
         } else {
-            // line 463
+            // line 483
             echo "                      
                       <option value=\"shipping\">";
-            // line 464
+            // line 484
             echo (isset($context["text_shipping"]) ? $context["text_shipping"] : null);
             echo "</option>
                       
                       ";
         }
-        // line 467
+        // line 487
         echo "                      ";
         if (((isset($context["config_tax_default"]) ? $context["config_tax_default"] : null) == "payment")) {
-            // line 468
+            // line 488
             echo "                      
                       <option value=\"payment\" selected=\"selected\">";
-            // line 469
+            // line 489
             echo (isset($context["text_payment"]) ? $context["text_payment"] : null);
             echo "</option>
                       
                       ";
         } else {
-            // line 472
+            // line 492
             echo "                      
                       <option value=\"payment\">";
-            // line 473
+            // line 493
             echo (isset($context["text_payment"]) ? $context["text_payment"] : null);
             echo "</option>
                       
                       ";
         }
-        // line 476
+        // line 496
         echo "                    
                     </select>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-tax-customer\"><span data-toggle=\"tooltip\" title=\"";
-        // line 481
+        // line 501
         echo (isset($context["help_tax_customer"]) ? $context["help_tax_customer"] : null);
         echo "\">";
         echo (isset($context["entry_tax_customer"]) ? $context["entry_tax_customer"] : null);
@@ -1272,53 +1309,53 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                   <div class=\"col-sm-10\">
                     <select name=\"config_tax_customer\" id=\"input-tax-customer\" class=\"form-control\">
                       <option value=\"\">";
-        // line 484
+        // line 504
         echo (isset($context["text_none"]) ? $context["text_none"] : null);
         echo "</option>
                       
                       ";
-        // line 486
+        // line 506
         if (((isset($context["config_tax_customer"]) ? $context["config_tax_customer"] : null) == "shipping")) {
-            // line 487
+            // line 507
             echo "                      
                       <option value=\"shipping\" selected=\"selected\">";
-            // line 488
+            // line 508
             echo (isset($context["text_shipping"]) ? $context["text_shipping"] : null);
             echo "</option>
                       
                       ";
         } else {
-            // line 491
+            // line 511
             echo "                      
                       <option value=\"shipping\">";
-            // line 492
+            // line 512
             echo (isset($context["text_shipping"]) ? $context["text_shipping"] : null);
             echo "</option>
                       
                       ";
         }
-        // line 495
+        // line 515
         echo "                      ";
         if (((isset($context["config_tax_customer"]) ? $context["config_tax_customer"] : null) == "payment")) {
-            // line 496
+            // line 516
             echo "                      
                       <option value=\"payment\" selected=\"selected\">";
-            // line 497
+            // line 517
             echo (isset($context["text_payment"]) ? $context["text_payment"] : null);
             echo "</option>
                       
                       ";
         } else {
-            // line 500
+            // line 520
             echo "                      
                       <option value=\"payment\">";
-            // line 501
+            // line 521
             echo (isset($context["text_payment"]) ? $context["text_payment"] : null);
             echo "</option>
                       
                       ";
         }
-        // line 504
+        // line 524
         echo "                    
                     </select>
                   </div>
@@ -1326,166 +1363,166 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
               </fieldset>
               <fieldset>
                 <legend>";
-        // line 510
+        // line 530
         echo (isset($context["text_account"]) ? $context["text_account"] : null);
         echo "</legend>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\"><span data-toggle=\"tooltip\" title=\"";
-        // line 512
+        // line 532
         echo (isset($context["help_customer_online"]) ? $context["help_customer_online"] : null);
         echo "\">";
         echo (isset($context["entry_customer_online"]) ? $context["entry_customer_online"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <label class=\"radio-inline\"> ";
-        // line 514
+        // line 534
         if ((isset($context["config_customer_online"]) ? $context["config_customer_online"] : null)) {
-            // line 515
+            // line 535
             echo "                      <input type=\"radio\" name=\"config_customer_online\" value=\"1\" checked=\"checked\" />
                       ";
-            // line 516
+            // line 536
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         } else {
-            // line 518
+            // line 538
             echo "                      <input type=\"radio\" name=\"config_customer_online\" value=\"1\" />
                       ";
-            // line 519
+            // line 539
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         }
-        // line 520
+        // line 540
         echo " </label>
                     <label class=\"radio-inline\"> ";
-        // line 521
+        // line 541
         if ( !(isset($context["config_customer_online"]) ? $context["config_customer_online"] : null)) {
-            // line 522
+            // line 542
             echo "                      <input type=\"radio\" name=\"config_customer_online\" value=\"0\" checked=\"checked\" />
                       ";
-            // line 523
+            // line 543
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         } else {
-            // line 525
+            // line 545
             echo "                      <input type=\"radio\" name=\"config_customer_online\" value=\"0\" />
                       ";
-            // line 526
+            // line 546
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         }
-        // line 527
+        // line 547
         echo " </label>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\"><span data-toggle=\"tooltip\" title=\"";
-        // line 531
+        // line 551
         echo (isset($context["help_customer_activity"]) ? $context["help_customer_activity"] : null);
         echo "\">";
         echo (isset($context["entry_customer_activity"]) ? $context["entry_customer_activity"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <label class=\"radio-inline\"> ";
-        // line 533
+        // line 553
         if ((isset($context["config_customer_activity"]) ? $context["config_customer_activity"] : null)) {
-            // line 534
+            // line 554
             echo "                      <input type=\"radio\" name=\"config_customer_activity\" value=\"1\" checked=\"checked\" />
                       ";
-            // line 535
+            // line 555
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         } else {
-            // line 537
+            // line 557
             echo "                      <input type=\"radio\" name=\"config_customer_activity\" value=\"1\" />
                       ";
-            // line 538
+            // line 558
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         }
-        // line 539
+        // line 559
         echo " </label>
                     <label class=\"radio-inline\"> ";
-        // line 540
+        // line 560
         if ( !(isset($context["config_customer_activity"]) ? $context["config_customer_activity"] : null)) {
-            // line 541
+            // line 561
             echo "                      <input type=\"radio\" name=\"config_customer_activity\" value=\"0\" checked=\"checked\" />
                       ";
-            // line 542
+            // line 562
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         } else {
-            // line 544
+            // line 564
             echo "                      <input type=\"radio\" name=\"config_customer_activity\" value=\"0\" />
                       ";
-            // line 545
+            // line 565
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         }
-        // line 546
+        // line 566
         echo " </label>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\">";
-        // line 550
+        // line 570
         echo (isset($context["entry_customer_search"]) ? $context["entry_customer_search"] : null);
         echo "</label>
                   <div class=\"col-sm-10\">
                     <label class=\"radio-inline\"> ";
-        // line 552
+        // line 572
         if ((isset($context["config_customer_search"]) ? $context["config_customer_search"] : null)) {
-            // line 553
+            // line 573
             echo "                      <input type=\"radio\" name=\"config_customer_search\" value=\"1\" checked=\"checked\" />
                       ";
-            // line 554
+            // line 574
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         } else {
-            // line 556
+            // line 576
             echo "                      <input type=\"radio\" name=\"config_customer_search\" value=\"1\" />
                       ";
-            // line 557
+            // line 577
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         }
-        // line 558
+        // line 578
         echo " </label>
                     <label class=\"radio-inline\"> ";
-        // line 559
+        // line 579
         if ( !(isset($context["config_customer_search"]) ? $context["config_customer_search"] : null)) {
-            // line 560
+            // line 580
             echo "                      <input type=\"radio\" name=\"config_customer_search\" value=\"0\" checked=\"checked\" />
                       ";
-            // line 561
+            // line 581
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         } else {
-            // line 563
+            // line 583
             echo "                      <input type=\"radio\" name=\"config_customer_search\" value=\"0\" />
                       ";
-            // line 564
+            // line 584
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         }
-        // line 565
+        // line 585
         echo " </label>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-customer-group\"><span data-toggle=\"tooltip\" title=\"";
-        // line 569
+        // line 589
         echo (isset($context["help_customer_group"]) ? $context["help_customer_group"] : null);
         echo "\">";
         echo (isset($context["entry_customer_group"]) ? $context["entry_customer_group"] : null);
@@ -1494,17 +1531,17 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                     <select name=\"config_customer_group_id\" id=\"input-customer-group\" class=\"form-control\">
                       
                       ";
-        // line 573
+        // line 593
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["customer_groups"]) ? $context["customer_groups"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["customer_group"]) {
-            // line 574
+            // line 594
             echo "                      ";
             if (($this->getAttribute($context["customer_group"], "customer_group_id", array()) == (isset($context["config_customer_group_id"]) ? $context["config_customer_group_id"] : null))) {
-                // line 575
+                // line 595
                 echo "                      
                       <option value=\"";
-                // line 576
+                // line 596
                 echo $this->getAttribute($context["customer_group"], "customer_group_id", array());
                 echo "\" selected=\"selected\">";
                 echo $this->getAttribute($context["customer_group"], "name", array());
@@ -1512,10 +1549,10 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                       
                       ";
             } else {
-                // line 579
+                // line 599
                 echo "                      
                       <option value=\"";
-                // line 580
+                // line 600
                 echo $this->getAttribute($context["customer_group"], "customer_group_id", array());
                 echo "\">";
                 echo $this->getAttribute($context["customer_group"], "name", array());
@@ -1523,55 +1560,55 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                       
                       ";
             }
-            // line 583
+            // line 603
             echo "                      ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['customer_group'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 584
+        // line 604
         echo "                    
                     </select>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\"><span data-toggle=\"tooltip\" title=\"";
-        // line 589
+        // line 609
         echo (isset($context["help_customer_group_display"]) ? $context["help_customer_group_display"] : null);
         echo "\">";
         echo (isset($context["entry_customer_group_display"]) ? $context["entry_customer_group_display"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\"> ";
-        // line 590
+        // line 610
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["customer_groups"]) ? $context["customer_groups"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["customer_group"]) {
-            // line 591
+            // line 611
             echo "                    <div class=\"checkbox\">
                       <label> ";
-            // line 592
+            // line 612
             if (twig_in_filter($this->getAttribute($context["customer_group"], "customer_group_id", array()), (isset($context["config_customer_group_display"]) ? $context["config_customer_group_display"] : null))) {
-                // line 593
+                // line 613
                 echo "                        <input type=\"checkbox\" name=\"config_customer_group_display[]\" value=\"";
                 echo $this->getAttribute($context["customer_group"], "customer_group_id", array());
                 echo "\" checked=\"checked\" />
                         ";
-                // line 594
+                // line 614
                 echo $this->getAttribute($context["customer_group"], "name", array());
                 echo "
                         ";
             } else {
-                // line 596
+                // line 616
                 echo "                        <input type=\"checkbox\" name=\"config_customer_group_display[]\" value=\"";
                 echo $this->getAttribute($context["customer_group"], "customer_group_id", array());
                 echo "\" />
                         ";
-                // line 597
+                // line 617
                 echo $this->getAttribute($context["customer_group"], "name", array());
                 echo "
                         ";
             }
-            // line 598
+            // line 618
             echo " </label>
                     </div>
                     ";
@@ -1579,99 +1616,99 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['customer_group'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 601
+        // line 621
         echo "                    ";
         if ((isset($context["error_customer_group_display"]) ? $context["error_customer_group_display"] : null)) {
-            // line 602
+            // line 622
             echo "                    <div class=\"text-danger\">";
             echo (isset($context["error_customer_group_display"]) ? $context["error_customer_group_display"] : null);
             echo "</div>
                     ";
         }
-        // line 603
+        // line 623
         echo " </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\"><span data-toggle=\"tooltip\" title=\"";
-        // line 606
+        // line 626
         echo (isset($context["help_customer_price"]) ? $context["help_customer_price"] : null);
         echo "\">";
         echo (isset($context["entry_customer_price"]) ? $context["entry_customer_price"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <label class=\"radio-inline\"> ";
-        // line 608
+        // line 628
         if ((isset($context["config_customer_price"]) ? $context["config_customer_price"] : null)) {
-            // line 609
+            // line 629
             echo "                      <input type=\"radio\" name=\"config_customer_price\" value=\"1\" checked=\"checked\" />
                       ";
-            // line 610
+            // line 630
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         } else {
-            // line 612
+            // line 632
             echo "                      <input type=\"radio\" name=\"config_customer_price\" value=\"1\" />
                       ";
-            // line 613
+            // line 633
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         }
-        // line 614
+        // line 634
         echo " </label>
                     <label class=\"radio-inline\"> ";
-        // line 615
+        // line 635
         if ( !(isset($context["config_customer_price"]) ? $context["config_customer_price"] : null)) {
-            // line 616
+            // line 636
             echo "                      <input type=\"radio\" name=\"config_customer_price\" value=\"0\" checked=\"checked\" />
                       ";
-            // line 617
+            // line 637
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         } else {
-            // line 619
+            // line 639
             echo "                      <input type=\"radio\" name=\"config_customer_price\" value=\"0\" />
                       ";
-            // line 620
+            // line 640
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         }
-        // line 621
+        // line 641
         echo " </label>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-login-attempts\"><span data-toggle=\"tooltip\" title=\"";
-        // line 625
+        // line 645
         echo (isset($context["help_login_attempts"]) ? $context["help_login_attempts"] : null);
         echo "\">";
         echo (isset($context["entry_login_attempts"]) ? $context["entry_login_attempts"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <input type=\"text\" name=\"config_login_attempts\" value=\"";
-        // line 627
+        // line 647
         echo (isset($context["config_login_attempts"]) ? $context["config_login_attempts"] : null);
         echo "\" placeholder=\"";
         echo (isset($context["entry_login_attempts"]) ? $context["entry_login_attempts"] : null);
         echo "\" id=\"input-login-attempts\" class=\"form-control\" />
                     ";
-        // line 628
+        // line 648
         if ((isset($context["error_login_attempts"]) ? $context["error_login_attempts"] : null)) {
-            // line 629
+            // line 649
             echo "                    <div class=\"text-danger\">";
             echo (isset($context["error_login_attempts"]) ? $context["error_login_attempts"] : null);
             echo "</div>
                     ";
         }
-        // line 630
+        // line 650
         echo " </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-account\"><span data-toggle=\"tooltip\" title=\"";
-        // line 633
+        // line 653
         echo (isset($context["help_account"]) ? $context["help_account"] : null);
         echo "\">";
         echo (isset($context["entry_account"]) ? $context["entry_account"] : null);
@@ -1679,22 +1716,22 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                   <div class=\"col-sm-10\">
                     <select name=\"config_account_id\" id=\"input-account\" class=\"form-control\">
                       <option value=\"0\">";
-        // line 636
+        // line 656
         echo (isset($context["text_none"]) ? $context["text_none"] : null);
         echo "</option>
                       
                       ";
-        // line 638
+        // line 658
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["informations"]) ? $context["informations"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["information"]) {
-            // line 639
+            // line 659
             echo "                      ";
             if (($this->getAttribute($context["information"], "information_id", array()) == (isset($context["config_account_id"]) ? $context["config_account_id"] : null))) {
-                // line 640
+                // line 660
                 echo "                      
                       <option value=\"";
-                // line 641
+                // line 661
                 echo $this->getAttribute($context["information"], "information_id", array());
                 echo "\" selected=\"selected\">";
                 echo $this->getAttribute($context["information"], "title", array());
@@ -1702,10 +1739,10 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                       
                       ";
             } else {
-                // line 644
+                // line 664
                 echo "                      
                       <option value=\"";
-                // line 645
+                // line 665
                 echo $this->getAttribute($context["information"], "information_id", array());
                 echo "\">";
                 echo $this->getAttribute($context["information"], "title", array());
@@ -1713,13 +1750,13 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                       
                       ";
             }
-            // line 648
+            // line 668
             echo "                      ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['information'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 649
+        // line 669
         echo "                    
                     </select>
                   </div>
@@ -1727,19 +1764,19 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
               </fieldset>
               <fieldset>
                 <legend>";
-        // line 655
+        // line 675
         echo (isset($context["text_checkout"]) ? $context["text_checkout"] : null);
         echo "</legend>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-invoice-prefix\"><span data-toggle=\"tooltip\" title=\"";
-        // line 657
+        // line 677
         echo (isset($context["help_invoice_prefix"]) ? $context["help_invoice_prefix"] : null);
         echo "\">";
         echo (isset($context["entry_invoice_prefix"]) ? $context["entry_invoice_prefix"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <input type=\"text\" name=\"config_invoice_prefix\" value=\"";
-        // line 659
+        // line 679
         echo (isset($context["config_invoice_prefix"]) ? $context["config_invoice_prefix"] : null);
         echo "\" placeholder=\"";
         echo (isset($context["entry_invoice_prefix"]) ? $context["entry_invoice_prefix"] : null);
@@ -1748,111 +1785,111 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\"><span data-toggle=\"tooltip\" title=\"";
-        // line 663
+        // line 683
         echo (isset($context["help_cart_weight"]) ? $context["help_cart_weight"] : null);
         echo "\">";
         echo (isset($context["entry_cart_weight"]) ? $context["entry_cart_weight"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <label class=\"radio-inline\"> ";
-        // line 665
+        // line 685
         if ((isset($context["config_cart_weight"]) ? $context["config_cart_weight"] : null)) {
-            // line 666
+            // line 686
             echo "                      <input type=\"radio\" name=\"config_cart_weight\" value=\"1\" checked=\"checked\" />
                       ";
-            // line 667
+            // line 687
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         } else {
-            // line 669
+            // line 689
             echo "                      <input type=\"radio\" name=\"config_cart_weight\" value=\"1\" />
                       ";
-            // line 670
+            // line 690
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         }
-        // line 671
+        // line 691
         echo " </label>
                     <label class=\"radio-inline\"> ";
-        // line 672
+        // line 692
         if ( !(isset($context["config_cart_weight"]) ? $context["config_cart_weight"] : null)) {
-            // line 673
+            // line 693
             echo "                      <input type=\"radio\" name=\"config_cart_weight\" value=\"0\" checked=\"checked\" />
                       ";
-            // line 674
+            // line 694
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         } else {
-            // line 676
+            // line 696
             echo "                      <input type=\"radio\" name=\"config_cart_weight\" value=\"0\" />
                       ";
-            // line 677
+            // line 697
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         }
-        // line 678
+        // line 698
         echo " </label>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\"><span data-toggle=\"tooltip\" title=\"";
-        // line 682
+        // line 702
         echo (isset($context["help_checkout_guest"]) ? $context["help_checkout_guest"] : null);
         echo "\">";
         echo (isset($context["entry_checkout_guest"]) ? $context["entry_checkout_guest"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <label class=\"radio-inline\"> ";
-        // line 684
+        // line 704
         if ((isset($context["config_checkout_guest"]) ? $context["config_checkout_guest"] : null)) {
-            // line 685
+            // line 705
             echo "                      <input type=\"radio\" name=\"config_checkout_guest\" value=\"1\" checked=\"checked\" />
                       ";
-            // line 686
+            // line 706
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         } else {
-            // line 688
+            // line 708
             echo "                      <input type=\"radio\" name=\"config_checkout_guest\" value=\"1\" />
                       ";
-            // line 689
+            // line 709
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         }
-        // line 690
+        // line 710
         echo " </label>
                     <label class=\"radio-inline\"> ";
-        // line 691
+        // line 711
         if ( !(isset($context["config_checkout_guest"]) ? $context["config_checkout_guest"] : null)) {
-            // line 692
+            // line 712
             echo "                      <input type=\"radio\" name=\"config_checkout_guest\" value=\"0\" checked=\"checked\" />
                       ";
-            // line 693
+            // line 713
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         } else {
-            // line 695
+            // line 715
             echo "                      <input type=\"radio\" name=\"config_checkout_guest\" value=\"0\" />
                       ";
-            // line 696
+            // line 716
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         }
-        // line 697
+        // line 717
         echo " </label>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-checkout\"><span data-toggle=\"tooltip\" title=\"";
-        // line 701
+        // line 721
         echo (isset($context["help_checkout"]) ? $context["help_checkout"] : null);
         echo "\">";
         echo (isset($context["entry_checkout"]) ? $context["entry_checkout"] : null);
@@ -1860,76 +1897,25 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                   <div class=\"col-sm-10\">
                     <select name=\"config_checkout_id\" id=\"input-checkout\" class=\"form-control\">
                       <option value=\"0\">";
-        // line 704
+        // line 724
         echo (isset($context["text_none"]) ? $context["text_none"] : null);
         echo "</option>
                       
                       ";
-        // line 706
+        // line 726
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["informations"]) ? $context["informations"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["information"]) {
-            // line 707
-            echo "                      ";
-            if (($this->getAttribute($context["information"], "information_id", array()) == (isset($context["config_checkout_id"]) ? $context["config_checkout_id"] : null))) {
-                // line 708
-                echo "                      
-                      <option value=\"";
-                // line 709
-                echo $this->getAttribute($context["information"], "information_id", array());
-                echo "\" selected=\"selected\">";
-                echo $this->getAttribute($context["information"], "title", array());
-                echo "</option>
-                      
-                      ";
-            } else {
-                // line 712
-                echo "                      
-                      <option value=\"";
-                // line 713
-                echo $this->getAttribute($context["information"], "information_id", array());
-                echo "\">";
-                echo $this->getAttribute($context["information"], "title", array());
-                echo "</option>
-                      
-                      ";
-            }
-            // line 716
-            echo "                      ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['information'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 717
-        echo "                    
-                    </select>
-                  </div>
-                </div>
-                <div class=\"form-group\">
-                  <label class=\"col-sm-2 control-label\" for=\"input-order-status\"><span data-toggle=\"tooltip\" title=\"";
-        // line 722
-        echo (isset($context["help_order_status"]) ? $context["help_order_status"] : null);
-        echo "\">";
-        echo (isset($context["entry_order_status"]) ? $context["entry_order_status"] : null);
-        echo "</span></label>
-                  <div class=\"col-sm-10\">
-                    <select name=\"config_order_status_id\" id=\"input-order-status\" class=\"form-control\">
-                      
-                      ";
-        // line 726
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["order_statuses"]) ? $context["order_statuses"] : null));
-        foreach ($context['_seq'] as $context["_key"] => $context["order_status"]) {
             // line 727
             echo "                      ";
-            if (($this->getAttribute($context["order_status"], "order_status_id", array()) == (isset($context["config_order_status_id"]) ? $context["config_order_status_id"] : null))) {
+            if (($this->getAttribute($context["information"], "information_id", array()) == (isset($context["config_checkout_id"]) ? $context["config_checkout_id"] : null))) {
                 // line 728
                 echo "                      
                       <option value=\"";
                 // line 729
-                echo $this->getAttribute($context["order_status"], "order_status_id", array());
+                echo $this->getAttribute($context["information"], "information_id", array());
                 echo "\" selected=\"selected\">";
-                echo $this->getAttribute($context["order_status"], "name", array());
+                echo $this->getAttribute($context["information"], "title", array());
                 echo "</option>
                       
                       ";
@@ -1938,9 +1924,9 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                 echo "                      
                       <option value=\"";
                 // line 733
-                echo $this->getAttribute($context["order_status"], "order_status_id", array());
+                echo $this->getAttribute($context["information"], "information_id", array());
                 echo "\">";
-                echo $this->getAttribute($context["order_status"], "name", array());
+                echo $this->getAttribute($context["information"], "title", array());
                 echo "</option>
                       
                       ";
@@ -1949,7 +1935,7 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
             echo "                      ";
         }
         $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['order_status'], $context['_parent'], $context['loop']);
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['information'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 737
         echo "                    
@@ -1957,44 +1943,95 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                   </div>
                 </div>
                 <div class=\"form-group\">
-                  <label class=\"col-sm-2 control-label\" for=\"input-process-status\"><span data-toggle=\"tooltip\" title=\"";
+                  <label class=\"col-sm-2 control-label\" for=\"input-order-status\"><span data-toggle=\"tooltip\" title=\"";
         // line 742
+        echo (isset($context["help_order_status"]) ? $context["help_order_status"] : null);
+        echo "\">";
+        echo (isset($context["entry_order_status"]) ? $context["entry_order_status"] : null);
+        echo "</span></label>
+                  <div class=\"col-sm-10\">
+                    <select name=\"config_order_status_id\" id=\"input-order-status\" class=\"form-control\">
+                      
+                      ";
+        // line 746
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["order_statuses"]) ? $context["order_statuses"] : null));
+        foreach ($context['_seq'] as $context["_key"] => $context["order_status"]) {
+            // line 747
+            echo "                      ";
+            if (($this->getAttribute($context["order_status"], "order_status_id", array()) == (isset($context["config_order_status_id"]) ? $context["config_order_status_id"] : null))) {
+                // line 748
+                echo "                      
+                      <option value=\"";
+                // line 749
+                echo $this->getAttribute($context["order_status"], "order_status_id", array());
+                echo "\" selected=\"selected\">";
+                echo $this->getAttribute($context["order_status"], "name", array());
+                echo "</option>
+                      
+                      ";
+            } else {
+                // line 752
+                echo "                      
+                      <option value=\"";
+                // line 753
+                echo $this->getAttribute($context["order_status"], "order_status_id", array());
+                echo "\">";
+                echo $this->getAttribute($context["order_status"], "name", array());
+                echo "</option>
+                      
+                      ";
+            }
+            // line 756
+            echo "                      ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['order_status'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 757
+        echo "                    
+                    </select>
+                  </div>
+                </div>
+                <div class=\"form-group\">
+                  <label class=\"col-sm-2 control-label\" for=\"input-process-status\"><span data-toggle=\"tooltip\" title=\"";
+        // line 762
         echo (isset($context["help_processing_status"]) ? $context["help_processing_status"] : null);
         echo "\">";
         echo (isset($context["entry_processing_status"]) ? $context["entry_processing_status"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <div class=\"well well-sm\" style=\"height: 150px; overflow: auto;\"> ";
-        // line 744
+        // line 764
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["order_statuses"]) ? $context["order_statuses"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["order_status"]) {
-            // line 745
+            // line 765
             echo "                      <div class=\"checkbox\">
                         <label> ";
-            // line 746
+            // line 766
             if (twig_in_filter($this->getAttribute($context["order_status"], "order_status_id", array()), (isset($context["config_processing_status"]) ? $context["config_processing_status"] : null))) {
-                // line 747
+                // line 767
                 echo "                          <input type=\"checkbox\" name=\"config_processing_status[]\" value=\"";
                 echo $this->getAttribute($context["order_status"], "order_status_id", array());
                 echo "\" checked=\"checked\" />
                           ";
-                // line 748
+                // line 768
                 echo $this->getAttribute($context["order_status"], "name", array());
                 echo "
                           ";
             } else {
-                // line 750
+                // line 770
                 echo "                          <input type=\"checkbox\" name=\"config_processing_status[]\" value=\"";
                 echo $this->getAttribute($context["order_status"], "order_status_id", array());
                 echo "\" />
                           ";
-                // line 751
+                // line 771
                 echo $this->getAttribute($context["order_status"], "name", array());
                 echo "
                           ";
             }
-            // line 752
+            // line 772
             echo " </label>
                       </div>
                       ";
@@ -2002,59 +2039,59 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['order_status'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 754
+        // line 774
         echo " </div>
                     ";
-        // line 755
+        // line 775
         if ((isset($context["error_processing_status"]) ? $context["error_processing_status"] : null)) {
-            // line 756
+            // line 776
             echo "                    <div class=\"text-danger\">";
             echo (isset($context["error_processing_status"]) ? $context["error_processing_status"] : null);
             echo "</div>
                     ";
         }
-        // line 757
+        // line 777
         echo " </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-complete-status\"><span data-toggle=\"tooltip\" title=\"";
-        // line 760
+        // line 780
         echo (isset($context["help_complete_status"]) ? $context["help_complete_status"] : null);
         echo "\">";
         echo (isset($context["entry_complete_status"]) ? $context["entry_complete_status"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <div class=\"well well-sm\" style=\"height: 150px; overflow: auto;\"> ";
-        // line 762
+        // line 782
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["order_statuses"]) ? $context["order_statuses"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["order_status"]) {
-            // line 763
+            // line 783
             echo "                      <div class=\"checkbox\">
                         <label> ";
-            // line 764
+            // line 784
             if (twig_in_filter($this->getAttribute($context["order_status"], "order_status_id", array()), (isset($context["config_complete_status"]) ? $context["config_complete_status"] : null))) {
-                // line 765
+                // line 785
                 echo "                          <input type=\"checkbox\" name=\"config_complete_status[]\" value=\"";
                 echo $this->getAttribute($context["order_status"], "order_status_id", array());
                 echo "\" checked=\"checked\" />
                           ";
-                // line 766
+                // line 786
                 echo $this->getAttribute($context["order_status"], "name", array());
                 echo "
                           ";
             } else {
-                // line 768
+                // line 788
                 echo "                          <input type=\"checkbox\" name=\"config_complete_status[]\" value=\"";
                 echo $this->getAttribute($context["order_status"], "order_status_id", array());
                 echo "\" />
                           ";
-                // line 769
+                // line 789
                 echo $this->getAttribute($context["order_status"], "name", array());
                 echo "
                           ";
             }
-            // line 770
+            // line 790
             echo " </label>
                       </div>
                       ";
@@ -2062,23 +2099,23 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['order_status'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 772
+        // line 792
         echo " </div>
                     ";
-        // line 773
+        // line 793
         if ((isset($context["error_complete_status"]) ? $context["error_complete_status"] : null)) {
-            // line 774
+            // line 794
             echo "                    <div class=\"text-danger\">";
             echo (isset($context["error_complete_status"]) ? $context["error_complete_status"] : null);
             echo "</div>
                     ";
         }
-        // line 775
+        // line 795
         echo " </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-fraud-status\"><span data-toggle=\"tooltip\" title=\"";
-        // line 778
+        // line 798
         echo (isset($context["help_fraud_status"]) ? $context["help_fraud_status"] : null);
         echo "\">";
         echo (isset($context["entry_fraud_status"]) ? $context["entry_fraud_status"] : null);
@@ -2087,17 +2124,17 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                     <select name=\"config_fraud_status_id\" id=\"input-fraud-status\" class=\"form-control\">
                       
                       ";
-        // line 782
+        // line 802
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["order_statuses"]) ? $context["order_statuses"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["order_status"]) {
-            // line 783
+            // line 803
             echo "                      ";
             if (($this->getAttribute($context["order_status"], "order_status_id", array()) == (isset($context["config_fraud_status_id"]) ? $context["config_fraud_status_id"] : null))) {
-                // line 784
+                // line 804
                 echo "                      
                       <option value=\"";
-                // line 785
+                // line 805
                 echo $this->getAttribute($context["order_status"], "order_status_id", array());
                 echo "\" selected=\"selected\">";
                 echo $this->getAttribute($context["order_status"], "name", array());
@@ -2105,10 +2142,10 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                       
                       ";
             } else {
-                // line 788
+                // line 808
                 echo "                      
                       <option value=\"";
-                // line 789
+                // line 809
                 echo $this->getAttribute($context["order_status"], "order_status_id", array());
                 echo "\">";
                 echo $this->getAttribute($context["order_status"], "name", array());
@@ -2116,20 +2153,20 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                       
                       ";
             }
-            // line 792
+            // line 812
             echo "                      ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['order_status'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 793
+        // line 813
         echo "                    
                     </select>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-api\"><span data-toggle=\"tooltip\" title=\"";
-        // line 798
+        // line 818
         echo (isset($context["help_api"]) ? $context["help_api"] : null);
         echo "\">";
         echo (isset($context["entry_api"]) ? $context["entry_api"] : null);
@@ -2137,22 +2174,22 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                   <div class=\"col-sm-10\">
                     <select name=\"config_api_id\" id=\"input-api\" class=\"form-control\">
                       <option value=\"0\">";
-        // line 801
+        // line 821
         echo (isset($context["text_none"]) ? $context["text_none"] : null);
         echo "</option>
                       
                       ";
-        // line 803
+        // line 823
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["apis"]) ? $context["apis"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["api"]) {
-            // line 804
+            // line 824
             echo "                      ";
             if (($this->getAttribute($context["api"], "api_id", array()) == (isset($context["config_api_id"]) ? $context["config_api_id"] : null))) {
-                // line 805
+                // line 825
                 echo "                      
                       <option value=\"";
-                // line 806
+                // line 826
                 echo $this->getAttribute($context["api"], "api_id", array());
                 echo "\" selected=\"selected\">";
                 echo $this->getAttribute($context["api"], "username", array());
@@ -2160,10 +2197,10 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                       
                       ";
             } else {
-                // line 809
+                // line 829
                 echo "                      
                       <option value=\"";
-                // line 810
+                // line 830
                 echo $this->getAttribute($context["api"], "api_id", array());
                 echo "\">";
                 echo $this->getAttribute($context["api"], "username", array());
@@ -2171,13 +2208,13 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                       
                       ";
             }
-            // line 813
+            // line 833
             echo "                      ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['api'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 814
+        // line 834
         echo "                    
                     </select>
                   </div>
@@ -2185,191 +2222,191 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
               </fieldset>
               <fieldset>
                 <legend>";
-        // line 820
+        // line 840
         echo (isset($context["text_stock"]) ? $context["text_stock"] : null);
         echo "</legend>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\"><span data-toggle=\"tooltip\" title=\"";
-        // line 822
+        // line 842
         echo (isset($context["help_stock_display"]) ? $context["help_stock_display"] : null);
         echo "\">";
         echo (isset($context["entry_stock_display"]) ? $context["entry_stock_display"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <label class=\"radio-inline\"> ";
-        // line 824
+        // line 844
         if ((isset($context["config_stock_display"]) ? $context["config_stock_display"] : null)) {
-            // line 825
+            // line 845
             echo "                      <input type=\"radio\" name=\"config_stock_display\" value=\"1\" checked=\"checked\" />
                       ";
-            // line 826
+            // line 846
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         } else {
-            // line 828
+            // line 848
             echo "                      <input type=\"radio\" name=\"config_stock_display\" value=\"1\" />
                       ";
-            // line 829
+            // line 849
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         }
-        // line 830
+        // line 850
         echo " </label>
                     <label class=\"radio-inline\"> ";
-        // line 831
+        // line 851
         if ( !(isset($context["config_stock_display"]) ? $context["config_stock_display"] : null)) {
-            // line 832
+            // line 852
             echo "                      <input type=\"radio\" name=\"config_stock_display\" value=\"0\" checked=\"checked\" />
                       ";
-            // line 833
+            // line 853
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         } else {
-            // line 835
+            // line 855
             echo "                      <input type=\"radio\" name=\"config_stock_display\" value=\"0\" />
                       ";
-            // line 836
+            // line 856
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         }
-        // line 837
+        // line 857
         echo " </label>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\"><span data-toggle=\"tooltip\" title=\"";
-        // line 841
+        // line 861
         echo (isset($context["help_stock_warning"]) ? $context["help_stock_warning"] : null);
         echo "\">";
         echo (isset($context["entry_stock_warning"]) ? $context["entry_stock_warning"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <label class=\"radio-inline\"> ";
-        // line 843
+        // line 863
         if ((isset($context["config_stock_warning"]) ? $context["config_stock_warning"] : null)) {
-            // line 844
+            // line 864
             echo "                      <input type=\"radio\" name=\"config_stock_warning\" value=\"1\" checked=\"checked\" />
                       ";
-            // line 845
+            // line 865
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         } else {
-            // line 847
+            // line 867
             echo "                      <input type=\"radio\" name=\"config_stock_warning\" value=\"1\" />
                       ";
-            // line 848
+            // line 868
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         }
-        // line 849
+        // line 869
         echo " </label>
                     <label class=\"radio-inline\"> ";
-        // line 850
+        // line 870
         if ( !(isset($context["config_stock_warning"]) ? $context["config_stock_warning"] : null)) {
-            // line 851
+            // line 871
             echo "                      <input type=\"radio\" name=\"config_stock_warning\" value=\"0\" checked=\"checked\" />
                       ";
-            // line 852
+            // line 872
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         } else {
-            // line 854
+            // line 874
             echo "                      <input type=\"radio\" name=\"config_stock_warning\" value=\"0\" />
                       ";
-            // line 855
+            // line 875
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         }
-        // line 856
+        // line 876
         echo " </label>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\"><span data-toggle=\"tooltip\" title=\"";
-        // line 860
+        // line 880
         echo (isset($context["help_stock_checkout"]) ? $context["help_stock_checkout"] : null);
         echo "\">";
         echo (isset($context["entry_stock_checkout"]) ? $context["entry_stock_checkout"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <label class=\"radio-inline\"> ";
-        // line 862
+        // line 882
         if ((isset($context["config_stock_checkout"]) ? $context["config_stock_checkout"] : null)) {
-            // line 863
+            // line 883
             echo "                      <input type=\"radio\" name=\"config_stock_checkout\" value=\"1\" checked=\"checked\" />
                       ";
-            // line 864
+            // line 884
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         } else {
-            // line 866
+            // line 886
             echo "                      <input type=\"radio\" name=\"config_stock_checkout\" value=\"1\" />
                       ";
-            // line 867
+            // line 887
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         }
-        // line 868
+        // line 888
         echo " </label>
                     <label class=\"radio-inline\"> ";
-        // line 869
+        // line 889
         if ( !(isset($context["config_stock_checkout"]) ? $context["config_stock_checkout"] : null)) {
-            // line 870
+            // line 890
             echo "                      <input type=\"radio\" name=\"config_stock_checkout\" value=\"0\" checked=\"checked\" />
                       ";
-            // line 871
+            // line 891
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         } else {
-            // line 873
+            // line 893
             echo "                      <input type=\"radio\" name=\"config_stock_checkout\" value=\"0\" />
                       ";
-            // line 874
+            // line 894
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         }
-        // line 875
+        // line 895
         echo " </label>
                   </div>
                 </div>
               </fieldset>
               <fieldset>
                 <legend>";
-        // line 880
+        // line 900
         echo (isset($context["text_affiliate"]) ? $context["text_affiliate"] : null);
         echo "</legend>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-affiliate-group\">";
-        // line 882
+        // line 902
         echo (isset($context["entry_affiliate_group"]) ? $context["entry_affiliate_group"] : null);
         echo "</label>
                   <div class=\"col-sm-10\">
                     <select name=\"config_affiliate_group_id\" id=\"input-affiliate-group\" class=\"form-control\">
                       
                       ";
-        // line 886
+        // line 906
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["customer_groups"]) ? $context["customer_groups"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["customer_group"]) {
-            // line 887
+            // line 907
             echo "                      ";
             if (($this->getAttribute($context["customer_group"], "customer_group_id", array()) == (isset($context["config_affiliate_group_id"]) ? $context["config_affiliate_group_id"] : null))) {
-                // line 888
+                // line 908
                 echo "                      
                       <option value=\"";
-                // line 889
+                // line 909
                 echo $this->getAttribute($context["customer_group"], "customer_group_id", array());
                 echo "\" selected=\"selected\">";
                 echo $this->getAttribute($context["customer_group"], "name", array());
@@ -2377,10 +2414,10 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                       
                       ";
             } else {
-                // line 892
+                // line 912
                 echo "                      
                       <option value=\"";
-                // line 893
+                // line 913
                 echo $this->getAttribute($context["customer_group"], "customer_group_id", array());
                 echo "\">";
                 echo $this->getAttribute($context["customer_group"], "name", array());
@@ -2388,131 +2425,131 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                       
                       ";
             }
-            // line 896
+            // line 916
             echo "                      ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['customer_group'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 897
+        // line 917
         echo "                    
                     </select>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\"><span data-toggle=\"tooltip\" title=\"";
-        // line 902
+        // line 922
         echo (isset($context["help_affiliate_approval"]) ? $context["help_affiliate_approval"] : null);
         echo "\">";
         echo (isset($context["entry_affiliate_approval"]) ? $context["entry_affiliate_approval"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <label class=\"radio-inline\"> ";
-        // line 904
+        // line 924
         if ((isset($context["config_affiliate_approval"]) ? $context["config_affiliate_approval"] : null)) {
-            // line 905
+            // line 925
             echo "                      <input type=\"radio\" name=\"config_affiliate_approval\" value=\"1\" checked=\"checked\" />
                       ";
-            // line 906
+            // line 926
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         } else {
-            // line 908
+            // line 928
             echo "                      <input type=\"radio\" name=\"config_affiliate_approval\" value=\"1\" />
                       ";
-            // line 909
+            // line 929
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         }
-        // line 910
+        // line 930
         echo " </label>
                     <label class=\"radio-inline\"> ";
-        // line 911
+        // line 931
         if ( !(isset($context["config_affiliate_approval"]) ? $context["config_affiliate_approval"] : null)) {
-            // line 912
+            // line 932
             echo "                      <input type=\"radio\" name=\"config_affiliate_approval\" value=\"0\" checked=\"checked\" />
                       ";
-            // line 913
+            // line 933
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         } else {
-            // line 915
+            // line 935
             echo "                      <input type=\"radio\" name=\"config_affiliate_approval\" value=\"0\" />
                       ";
-            // line 916
+            // line 936
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         }
-        // line 917
+        // line 937
         echo " </label>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\"><span data-toggle=\"tooltip\" title=\"";
-        // line 921
+        // line 941
         echo (isset($context["help_affiliate_auto"]) ? $context["help_affiliate_auto"] : null);
         echo "\">";
         echo (isset($context["entry_affiliate_auto"]) ? $context["entry_affiliate_auto"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <label class=\"radio-inline\"> ";
-        // line 923
+        // line 943
         if ((isset($context["config_affiliate_auto"]) ? $context["config_affiliate_auto"] : null)) {
-            // line 924
+            // line 944
             echo "                      <input type=\"radio\" name=\"config_affiliate_auto\" value=\"1\" checked=\"checked\" />
                       ";
-            // line 925
+            // line 945
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         } else {
-            // line 927
+            // line 947
             echo "                      <input type=\"radio\" name=\"config_affiliate_auto\" value=\"1\" />
                       ";
-            // line 928
+            // line 948
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         }
-        // line 929
+        // line 949
         echo " </label>
                     <label class=\"radio-inline\"> ";
-        // line 930
+        // line 950
         if ( !(isset($context["config_affiliate_auto"]) ? $context["config_affiliate_auto"] : null)) {
-            // line 931
+            // line 951
             echo "                      <input type=\"radio\" name=\"config_affiliate_auto\" value=\"0\" checked=\"checked\" />
                       ";
-            // line 932
+            // line 952
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         } else {
-            // line 934
+            // line 954
             echo "                      <input type=\"radio\" name=\"config_affiliate_auto\" value=\"0\" />
                       ";
-            // line 935
+            // line 955
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         }
-        // line 936
+        // line 956
         echo " </label>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-affiliate-commission\"><span data-toggle=\"tooltip\" title=\"";
-        // line 940
+        // line 960
         echo (isset($context["help_affiliate_commission"]) ? $context["help_affiliate_commission"] : null);
         echo "\">";
         echo (isset($context["entry_affiliate_commission"]) ? $context["entry_affiliate_commission"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <input type=\"text\" name=\"config_affiliate_commission\" value=\"";
-        // line 942
+        // line 962
         echo (isset($context["config_affiliate_commission"]) ? $context["config_affiliate_commission"] : null);
         echo "\" placeholder=\"";
         echo (isset($context["entry_affiliate_commission"]) ? $context["entry_affiliate_commission"] : null);
@@ -2521,7 +2558,7 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-affiliate\"><span data-toggle=\"tooltip\" title=\"";
-        // line 946
+        // line 966
         echo (isset($context["help_affiliate"]) ? $context["help_affiliate"] : null);
         echo "\">";
         echo (isset($context["entry_affiliate"]) ? $context["entry_affiliate"] : null);
@@ -2529,22 +2566,22 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                   <div class=\"col-sm-10\">
                     <select name=\"config_affiliate_id\" id=\"input-affiliate\" class=\"form-control\">
                       <option value=\"0\">";
-        // line 949
+        // line 969
         echo (isset($context["text_none"]) ? $context["text_none"] : null);
         echo "</option>
                       
                       ";
-        // line 951
+        // line 971
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["informations"]) ? $context["informations"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["information"]) {
-            // line 952
+            // line 972
             echo "                      ";
             if (($this->getAttribute($context["information"], "information_id", array()) == (isset($context["config_affiliate_id"]) ? $context["config_affiliate_id"] : null))) {
-                // line 953
+                // line 973
                 echo "                      
                       <option value=\"";
-                // line 954
+                // line 974
                 echo $this->getAttribute($context["information"], "information_id", array());
                 echo "\" selected=\"selected\">";
                 echo $this->getAttribute($context["information"], "title", array());
@@ -2552,10 +2589,10 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                       
                       ";
             } else {
-                // line 957
+                // line 977
                 echo "                      
                       <option value=\"";
-                // line 958
+                // line 978
                 echo $this->getAttribute($context["information"], "information_id", array());
                 echo "\">";
                 echo $this->getAttribute($context["information"], "title", array());
@@ -2563,13 +2600,13 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                       
                       ";
             }
-            // line 961
+            // line 981
             echo "                      ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['information'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 962
+        // line 982
         echo "                    
                     </select>
                   </div>
@@ -2577,12 +2614,12 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
               </fieldset>
               <fieldset>
                 <legend>";
-        // line 968
+        // line 988
         echo (isset($context["text_return"]) ? $context["text_return"] : null);
         echo "</legend>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-return\"><span data-toggle=\"tooltip\" title=\"";
-        // line 970
+        // line 990
         echo (isset($context["help_return"]) ? $context["help_return"] : null);
         echo "\">";
         echo (isset($context["entry_return"]) ? $context["entry_return"] : null);
@@ -2590,76 +2627,25 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                   <div class=\"col-sm-10\">
                     <select name=\"config_return_id\" id=\"input-return\" class=\"form-control\">
                       <option value=\"0\">";
-        // line 973
+        // line 993
         echo (isset($context["text_none"]) ? $context["text_none"] : null);
         echo "</option>
                       
                       ";
-        // line 975
+        // line 995
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["informations"]) ? $context["informations"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["information"]) {
-            // line 976
-            echo "                      ";
-            if (($this->getAttribute($context["information"], "information_id", array()) == (isset($context["config_return_id"]) ? $context["config_return_id"] : null))) {
-                // line 977
-                echo "                      
-                      <option value=\"";
-                // line 978
-                echo $this->getAttribute($context["information"], "information_id", array());
-                echo "\" selected=\"selected\">";
-                echo $this->getAttribute($context["information"], "title", array());
-                echo "</option>
-                      
-                      ";
-            } else {
-                // line 981
-                echo "                      
-                      <option value=\"";
-                // line 982
-                echo $this->getAttribute($context["information"], "information_id", array());
-                echo "\">";
-                echo $this->getAttribute($context["information"], "title", array());
-                echo "</option>
-                      
-                      ";
-            }
-            // line 985
-            echo "                      ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['information'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 986
-        echo "                    
-                    </select>
-                  </div>
-                </div>
-                <div class=\"form-group\">
-                  <label class=\"col-sm-2 control-label\" for=\"input-return-status\"><span data-toggle=\"tooltip\" title=\"";
-        // line 991
-        echo (isset($context["help_return_status"]) ? $context["help_return_status"] : null);
-        echo "\">";
-        echo (isset($context["entry_return_status"]) ? $context["entry_return_status"] : null);
-        echo "</span></label>
-                  <div class=\"col-sm-10\">
-                    <select name=\"config_return_status_id\" id=\"input-return-status\" class=\"form-control\">
-                      
-                      ";
-        // line 995
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["return_statuses"]) ? $context["return_statuses"] : null));
-        foreach ($context['_seq'] as $context["_key"] => $context["return_status"]) {
             // line 996
             echo "                      ";
-            if (($this->getAttribute($context["return_status"], "return_status_id", array()) == (isset($context["config_return_status_id"]) ? $context["config_return_status_id"] : null))) {
+            if (($this->getAttribute($context["information"], "information_id", array()) == (isset($context["config_return_id"]) ? $context["config_return_id"] : null))) {
                 // line 997
                 echo "                      
                       <option value=\"";
                 // line 998
-                echo $this->getAttribute($context["return_status"], "return_status_id", array());
+                echo $this->getAttribute($context["information"], "information_id", array());
                 echo "\" selected=\"selected\">";
-                echo $this->getAttribute($context["return_status"], "name", array());
+                echo $this->getAttribute($context["information"], "title", array());
                 echo "</option>
                       
                       ";
@@ -2668,9 +2654,9 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                 echo "                      
                       <option value=\"";
                 // line 1002
-                echo $this->getAttribute($context["return_status"], "return_status_id", array());
+                echo $this->getAttribute($context["information"], "information_id", array());
                 echo "\">";
-                echo $this->getAttribute($context["return_status"], "name", array());
+                echo $this->getAttribute($context["information"], "title", array());
                 echo "</option>
                       
                       ";
@@ -2679,9 +2665,60 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
             echo "                      ";
         }
         $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['return_status'], $context['_parent'], $context['loop']);
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['information'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 1006
+        echo "                    
+                    </select>
+                  </div>
+                </div>
+                <div class=\"form-group\">
+                  <label class=\"col-sm-2 control-label\" for=\"input-return-status\"><span data-toggle=\"tooltip\" title=\"";
+        // line 1011
+        echo (isset($context["help_return_status"]) ? $context["help_return_status"] : null);
+        echo "\">";
+        echo (isset($context["entry_return_status"]) ? $context["entry_return_status"] : null);
+        echo "</span></label>
+                  <div class=\"col-sm-10\">
+                    <select name=\"config_return_status_id\" id=\"input-return-status\" class=\"form-control\">
+                      
+                      ";
+        // line 1015
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["return_statuses"]) ? $context["return_statuses"] : null));
+        foreach ($context['_seq'] as $context["_key"] => $context["return_status"]) {
+            // line 1016
+            echo "                      ";
+            if (($this->getAttribute($context["return_status"], "return_status_id", array()) == (isset($context["config_return_status_id"]) ? $context["config_return_status_id"] : null))) {
+                // line 1017
+                echo "                      
+                      <option value=\"";
+                // line 1018
+                echo $this->getAttribute($context["return_status"], "return_status_id", array());
+                echo "\" selected=\"selected\">";
+                echo $this->getAttribute($context["return_status"], "name", array());
+                echo "</option>
+                      
+                      ";
+            } else {
+                // line 1021
+                echo "                      
+                      <option value=\"";
+                // line 1022
+                echo $this->getAttribute($context["return_status"], "return_status_id", array());
+                echo "\">";
+                echo $this->getAttribute($context["return_status"], "name", array());
+                echo "</option>
+                      
+                      ";
+            }
+            // line 1025
+            echo "                      ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['return_status'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 1026
         echo "                    
                     </select>
                   </div>
@@ -2689,12 +2726,12 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
               </fieldset>
               <fieldset>
                 <legend>";
-        // line 1012
+        // line 1032
         echo (isset($context["text_captcha"]) ? $context["text_captcha"] : null);
         echo "</legend>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\"><span data-toggle=\"tooltip\" title=\"";
-        // line 1014
+        // line 1034
         echo (isset($context["help_captcha"]) ? $context["help_captcha"] : null);
         echo "\">";
         echo (isset($context["entry_captcha"]) ? $context["entry_captcha"] : null);
@@ -2702,22 +2739,22 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                   <div class=\"col-sm-10\">
                     <select name=\"config_captcha\" id=\"input-captcha\" class=\"form-control\">
                       <option value=\"\">";
-        // line 1017
+        // line 1037
         echo (isset($context["text_none"]) ? $context["text_none"] : null);
         echo "</option>
                       
                       ";
-        // line 1019
+        // line 1039
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["captchas"]) ? $context["captchas"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["captcha"]) {
-            // line 1020
+            // line 1040
             echo "                      ";
             if (($this->getAttribute($context["captcha"], "value", array()) == (isset($context["config_captcha"]) ? $context["config_captcha"] : null))) {
-                // line 1021
+                // line 1041
                 echo "                      
                       <option value=\"";
-                // line 1022
+                // line 1042
                 echo $this->getAttribute($context["captcha"], "value", array());
                 echo "\" selected=\"selected\">";
                 echo $this->getAttribute($context["captcha"], "text", array());
@@ -2725,10 +2762,10 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                       
                       ";
             } else {
-                // line 1025
+                // line 1045
                 echo "                      
                       <option value=\"";
-                // line 1026
+                // line 1046
                 echo $this->getAttribute($context["captcha"], "value", array());
                 echo "\">";
                 echo $this->getAttribute($context["captcha"], "text", array());
@@ -2736,54 +2773,54 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                       
                       ";
             }
-            // line 1029
+            // line 1049
             echo "                      ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['captcha'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 1030
+        // line 1050
         echo "                    
                     </select>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\">";
-        // line 1035
+        // line 1055
         echo (isset($context["entry_captcha_page"]) ? $context["entry_captcha_page"] : null);
         echo "</label>
                   <div class=\"col-sm-10\">
                     <div class=\"well well-sm\" style=\"height: 150px; overflow: auto;\"> ";
-        // line 1037
+        // line 1057
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["captcha_pages"]) ? $context["captcha_pages"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["captcha_page"]) {
-            // line 1038
+            // line 1058
             echo "                      <div class=\"checkbox\">
                         <label> ";
-            // line 1039
+            // line 1059
             if (twig_in_filter($this->getAttribute($context["captcha_page"], "value", array()), (isset($context["config_captcha_page"]) ? $context["config_captcha_page"] : null))) {
-                // line 1040
+                // line 1060
                 echo "                          <input type=\"checkbox\" name=\"config_captcha_page[]\" value=\"";
                 echo $this->getAttribute($context["captcha_page"], "value", array());
                 echo "\" checked=\"checked\" />
                           ";
-                // line 1041
+                // line 1061
                 echo $this->getAttribute($context["captcha_page"], "text", array());
                 echo "
                           ";
             } else {
-                // line 1043
+                // line 1063
                 echo "                          <input type=\"checkbox\" name=\"config_captcha_page[]\" value=\"";
                 echo $this->getAttribute($context["captcha_page"], "value", array());
                 echo "\" />
                           ";
-                // line 1044
+                // line 1064
                 echo $this->getAttribute($context["captcha_page"], "text", array());
                 echo "
                           ";
             }
-            // line 1045
+            // line 1065
             echo " </label>
                       </div>
                       ";
@@ -2791,7 +2828,7 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['captcha_page'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 1047
+        // line 1067
         echo " </div>
                   </div>
                 </div>
@@ -2800,36 +2837,36 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
             <div class=\"tab-pane\" id=\"tab-image\">
               <div class=\"form-group\">
                 <label class=\"col-sm-2 control-label\" for=\"input-logo\">";
-        // line 1054
+        // line 1074
         echo (isset($context["entry_logo"]) ? $context["entry_logo"] : null);
         echo "</label>
                 <div class=\"col-sm-10\"><a href=\"\" id=\"thumb-logo\" data-toggle=\"image\" class=\"img-thumbnail\"><img src=\"";
-        // line 1055
+        // line 1075
         echo (isset($context["logo"]) ? $context["logo"] : null);
         echo "\" alt=\"\" title=\"\" data-placeholder=\"";
         echo (isset($context["placeholder"]) ? $context["placeholder"] : null);
         echo "\" /></a>
                   <input type=\"hidden\" name=\"config_logo\" value=\"";
-        // line 1056
+        // line 1076
         echo (isset($context["config_logo"]) ? $context["config_logo"] : null);
         echo "\" id=\"input-logo\" />
                 </div>
               </div>
               <div class=\"form-group\">
                 <label class=\"col-sm-2 control-label\" for=\"input-icon\"><span data-toggle=\"tooltip\" title=\"";
-        // line 1060
+        // line 1080
         echo (isset($context["help_icon"]) ? $context["help_icon"] : null);
         echo "\">";
         echo (isset($context["entry_icon"]) ? $context["entry_icon"] : null);
         echo "</span></label>
                 <div class=\"col-sm-10\"><a href=\"\" id=\"thumb-icon\" data-toggle=\"image\" class=\"img-thumbnail\"><img src=\"";
-        // line 1061
+        // line 1081
         echo (isset($context["icon"]) ? $context["icon"] : null);
         echo "\" alt=\"\" title=\"\" data-placeholder=\"";
         echo (isset($context["placeholder"]) ? $context["placeholder"] : null);
         echo "\" /></a>
                   <input type=\"hidden\" name=\"config_icon\" value=\"";
-        // line 1062
+        // line 1082
         echo (isset($context["config_icon"]) ? $context["config_icon"] : null);
         echo "\" id=\"input-icon\" />
                 </div>
@@ -2838,12 +2875,12 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
             <div class=\"tab-pane\" id=\"tab-mail\">
               <fieldset>
                 <legend>";
-        // line 1068
+        // line 1088
         echo (isset($context["text_general"]) ? $context["text_general"] : null);
         echo "</legend>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-mail-engine\"><span data-toggle=\"tooltip\" title=\"";
-        // line 1070
+        // line 1090
         echo (isset($context["help_mail_engine"]) ? $context["help_mail_engine"] : null);
         echo "\">";
         echo (isset($context["entry_mail_engine"]) ? $context["entry_mail_engine"] : null);
@@ -2852,62 +2889,62 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                     <select name=\"config_mail_engine\" id=\"input-mail-engine\" class=\"form-control\">
                       
                       ";
-        // line 1074
+        // line 1094
         if (((isset($context["config_mail_engine"]) ? $context["config_mail_engine"] : null) == "mail")) {
-            // line 1075
+            // line 1095
             echo "                      
                       <option value=\"mail\" selected=\"selected\">";
-            // line 1076
+            // line 1096
             echo (isset($context["text_mail"]) ? $context["text_mail"] : null);
             echo "</option>
                       
                       ";
         } else {
-            // line 1079
+            // line 1099
             echo "                      
                       <option value=\"mail\">";
-            // line 1080
+            // line 1100
             echo (isset($context["text_mail"]) ? $context["text_mail"] : null);
             echo "</option>
                       
                       ";
         }
-        // line 1083
+        // line 1103
         echo "                      ";
         if (((isset($context["config_mail_engine"]) ? $context["config_mail_engine"] : null) == "smtp")) {
-            // line 1084
+            // line 1104
             echo "                      
                       <option value=\"smtp\" selected=\"selected\">";
-            // line 1085
+            // line 1105
             echo (isset($context["text_smtp"]) ? $context["text_smtp"] : null);
             echo "</option>
                       
                       ";
         } else {
-            // line 1088
+            // line 1108
             echo "                      
                       <option value=\"smtp\">";
-            // line 1089
+            // line 1109
             echo (isset($context["text_smtp"]) ? $context["text_smtp"] : null);
             echo "</option>
                       
                       ";
         }
-        // line 1092
+        // line 1112
         echo "                    
                     </select>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-mail-parameter\"><span data-toggle=\"tooltip\" title=\"";
-        // line 1097
+        // line 1117
         echo (isset($context["help_mail_parameter"]) ? $context["help_mail_parameter"] : null);
         echo "\">";
         echo (isset($context["entry_mail_parameter"]) ? $context["entry_mail_parameter"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <input type=\"text\" name=\"config_mail_parameter\" value=\"";
-        // line 1099
+        // line 1119
         echo (isset($context["config_mail_parameter"]) ? $context["config_mail_parameter"] : null);
         echo "\" placeholder=\"";
         echo (isset($context["entry_mail_parameter"]) ? $context["entry_mail_parameter"] : null);
@@ -2916,14 +2953,14 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-mail-smtp-hostname\"><span data-toggle=\"tooltip\" title=\"";
-        // line 1103
+        // line 1123
         echo (isset($context["help_mail_smtp_hostname"]) ? $context["help_mail_smtp_hostname"] : null);
         echo "\">";
         echo (isset($context["entry_mail_smtp_hostname"]) ? $context["entry_mail_smtp_hostname"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <input type=\"text\" name=\"config_mail_smtp_hostname\" value=\"";
-        // line 1105
+        // line 1125
         echo (isset($context["config_mail_smtp_hostname"]) ? $context["config_mail_smtp_hostname"] : null);
         echo "\" placeholder=\"";
         echo (isset($context["entry_mail_smtp_hostname"]) ? $context["entry_mail_smtp_hostname"] : null);
@@ -2932,12 +2969,12 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-mail-smtp-username\">";
-        // line 1109
+        // line 1129
         echo (isset($context["entry_mail_smtp_username"]) ? $context["entry_mail_smtp_username"] : null);
         echo "</label>
                   <div class=\"col-sm-10\">
                     <input type=\"text\" name=\"config_mail_smtp_username\" value=\"";
-        // line 1111
+        // line 1131
         echo (isset($context["config_mail_smtp_username"]) ? $context["config_mail_smtp_username"] : null);
         echo "\" placeholder=\"";
         echo (isset($context["entry_mail_smtp_username"]) ? $context["entry_mail_smtp_username"] : null);
@@ -2946,14 +2983,14 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-mail-smtp-password\"><span data-toggle=\"tooltip\" title=\"";
-        // line 1115
+        // line 1135
         echo (isset($context["help_mail_smtp_password"]) ? $context["help_mail_smtp_password"] : null);
         echo "\">";
         echo (isset($context["entry_mail_smtp_password"]) ? $context["entry_mail_smtp_password"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <input type=\"text\" name=\"config_mail_smtp_password\" value=\"";
-        // line 1117
+        // line 1137
         echo (isset($context["config_mail_smtp_password"]) ? $context["config_mail_smtp_password"] : null);
         echo "\" placeholder=\"";
         echo (isset($context["entry_mail_smtp_password"]) ? $context["entry_mail_smtp_password"] : null);
@@ -2962,12 +2999,12 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-mail-smtp-port\">";
-        // line 1121
+        // line 1141
         echo (isset($context["entry_mail_smtp_port"]) ? $context["entry_mail_smtp_port"] : null);
         echo "</label>
                   <div class=\"col-sm-10\">
                     <input type=\"text\" name=\"config_mail_smtp_port\" value=\"";
-        // line 1123
+        // line 1143
         echo (isset($context["config_mail_smtp_port"]) ? $context["config_mail_smtp_port"] : null);
         echo "\" placeholder=\"";
         echo (isset($context["entry_mail_smtp_port"]) ? $context["entry_mail_smtp_port"] : null);
@@ -2976,12 +3013,12 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-mail-smtp-timeout\">";
-        // line 1127
+        // line 1147
         echo (isset($context["entry_mail_smtp_timeout"]) ? $context["entry_mail_smtp_timeout"] : null);
         echo "</label>
                   <div class=\"col-sm-10\">
                     <input type=\"text\" name=\"config_mail_smtp_timeout\" value=\"";
-        // line 1129
+        // line 1149
         echo (isset($context["config_mail_smtp_timeout"]) ? $context["config_mail_smtp_timeout"] : null);
         echo "\" placeholder=\"";
         echo (isset($context["entry_mail_smtp_timeout"]) ? $context["entry_mail_smtp_timeout"] : null);
@@ -2991,48 +3028,48 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
               </fieldset>
               <fieldset>
                 <legend>";
-        // line 1134
+        // line 1154
         echo (isset($context["text_mail_alert"]) ? $context["text_mail_alert"] : null);
         echo "</legend>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\"><span data-toggle=\"tooltip\" title=\"";
-        // line 1136
+        // line 1156
         echo (isset($context["help_mail_alert"]) ? $context["help_mail_alert"] : null);
         echo "\">";
         echo (isset($context["entry_mail_alert"]) ? $context["entry_mail_alert"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <div class=\"well well-sm\" style=\"height: 150px; overflow: auto;\"> ";
-        // line 1138
+        // line 1158
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["mail_alerts"]) ? $context["mail_alerts"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["mail_alert"]) {
-            // line 1139
+            // line 1159
             echo "                      <div class=\"checkbox\">
                         <label> ";
-            // line 1140
+            // line 1160
             if (twig_in_filter($this->getAttribute($context["mail_alert"], "value", array()), (isset($context["config_mail_alert"]) ? $context["config_mail_alert"] : null))) {
-                // line 1141
+                // line 1161
                 echo "                          <input type=\"checkbox\" name=\"config_mail_alert[]\" value=\"";
                 echo $this->getAttribute($context["mail_alert"], "value", array());
                 echo "\" checked=\"checked\" />
                           ";
-                // line 1142
+                // line 1162
                 echo $this->getAttribute($context["mail_alert"], "text", array());
                 echo "
                           ";
             } else {
-                // line 1144
+                // line 1164
                 echo "                          <input type=\"checkbox\" name=\"config_mail_alert[]\" value=\"";
                 echo $this->getAttribute($context["mail_alert"], "value", array());
                 echo "\" />
                           ";
-                // line 1145
+                // line 1165
                 echo $this->getAttribute($context["mail_alert"], "text", array());
                 echo "
                           ";
             }
-            // line 1146
+            // line 1166
             echo " </label>
                       </div>
                       ";
@@ -3040,20 +3077,20 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['mail_alert'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 1148
+        // line 1168
         echo " </div>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-mail-alert-email\"><span data-toggle=\"tooltip\" title=\"";
-        // line 1152
+        // line 1172
         echo (isset($context["help_mail_alert_email"]) ? $context["help_mail_alert_email"] : null);
         echo "\">";
         echo (isset($context["entry_mail_alert_email"]) ? $context["entry_mail_alert_email"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <textarea name=\"config_mail_alert_email\" rows=\"5\" placeholder=\"";
-        // line 1154
+        // line 1174
         echo (isset($context["entry_mail_alert_email"]) ? $context["entry_mail_alert_email"] : null);
         echo "\" id=\"input-alert-email\" class=\"form-control\">";
         echo (isset($context["config_mail_alert_email"]) ? $context["config_mail_alert_email"] : null);
@@ -3065,123 +3102,123 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
             <div class=\"tab-pane\" id=\"tab-server\">
               <fieldset>
                 <legend>";
-        // line 1161
+        // line 1181
         echo (isset($context["text_general"]) ? $context["text_general"] : null);
         echo "</legend>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\"><span data-toggle=\"tooltip\" title=\"";
-        // line 1163
+        // line 1183
         echo (isset($context["help_maintenance"]) ? $context["help_maintenance"] : null);
         echo "\">";
         echo (isset($context["entry_maintenance"]) ? $context["entry_maintenance"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <label class=\"radio-inline\"> ";
-        // line 1165
+        // line 1185
         if ((isset($context["config_maintenance"]) ? $context["config_maintenance"] : null)) {
-            // line 1166
+            // line 1186
             echo "                      <input type=\"radio\" name=\"config_maintenance\" value=\"1\" checked=\"checked\" />
                       ";
-            // line 1167
+            // line 1187
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         } else {
-            // line 1169
+            // line 1189
             echo "                      <input type=\"radio\" name=\"config_maintenance\" value=\"1\" />
                       ";
-            // line 1170
+            // line 1190
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         }
-        // line 1171
+        // line 1191
         echo " </label>
                     <label class=\"radio-inline\"> ";
-        // line 1172
+        // line 1192
         if ( !(isset($context["config_maintenance"]) ? $context["config_maintenance"] : null)) {
-            // line 1173
+            // line 1193
             echo "                      <input type=\"radio\" name=\"config_maintenance\" value=\"0\" checked=\"checked\" />
                       ";
-            // line 1174
+            // line 1194
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         } else {
-            // line 1176
+            // line 1196
             echo "                      <input type=\"radio\" name=\"config_maintenance\" value=\"0\" />
                       ";
-            // line 1177
+            // line 1197
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         }
-        // line 1178
+        // line 1198
         echo " </label>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\"><span data-toggle=\"tooltip\" title=\"";
-        // line 1182
+        // line 1202
         echo (isset($context["help_seo_url"]) ? $context["help_seo_url"] : null);
         echo "\">";
         echo (isset($context["entry_seo_url"]) ? $context["entry_seo_url"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <label class=\"radio-inline\"> ";
-        // line 1184
+        // line 1204
         if ((isset($context["config_seo_url"]) ? $context["config_seo_url"] : null)) {
-            // line 1185
+            // line 1205
             echo "                      <input type=\"radio\" name=\"config_seo_url\" value=\"1\" checked=\"checked\" />
                       ";
-            // line 1186
+            // line 1206
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         } else {
-            // line 1188
+            // line 1208
             echo "                      <input type=\"radio\" name=\"config_seo_url\" value=\"1\" />
                       ";
-            // line 1189
+            // line 1209
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         }
-        // line 1190
+        // line 1210
         echo " </label>
                     <label class=\"radio-inline\"> ";
-        // line 1191
+        // line 1211
         if ( !(isset($context["config_seo_url"]) ? $context["config_seo_url"] : null)) {
-            // line 1192
+            // line 1212
             echo "                      <input type=\"radio\" name=\"config_seo_url\" value=\"0\" checked=\"checked\" />
                       ";
-            // line 1193
+            // line 1213
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         } else {
-            // line 1195
+            // line 1215
             echo "                      <input type=\"radio\" name=\"config_seo_url\" value=\"0\" />
                       ";
-            // line 1196
+            // line 1216
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         }
-        // line 1197
+        // line 1217
         echo " </label>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-robots\"><span data-toggle=\"tooltip\" title=\"";
-        // line 1201
+        // line 1221
         echo (isset($context["help_robots"]) ? $context["help_robots"] : null);
         echo "\">";
         echo (isset($context["entry_robots"]) ? $context["entry_robots"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <textarea name=\"config_robots\" rows=\"5\" placeholder=\"";
-        // line 1203
+        // line 1223
         echo (isset($context["entry_robots"]) ? $context["entry_robots"] : null);
         echo "\" id=\"input-robots\" class=\"form-control\">";
         echo (isset($context["config_robots"]) ? $context["config_robots"] : null);
@@ -3190,14 +3227,14 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-compression\"><span data-toggle=\"tooltip\" title=\"";
-        // line 1207
+        // line 1227
         echo (isset($context["help_compression"]) ? $context["help_compression"] : null);
         echo "\">";
         echo (isset($context["entry_compression"]) ? $context["entry_compression"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <input type=\"text\" name=\"config_compression\" value=\"";
-        // line 1209
+        // line 1229
         echo (isset($context["config_compression"]) ? $context["config_compression"] : null);
         echo "\" placeholder=\"";
         echo (isset($context["entry_compression"]) ? $context["entry_compression"] : null);
@@ -3207,207 +3244,207 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
               </fieldset>
               <fieldset>
                 <legend>";
-        // line 1214
+        // line 1234
         echo (isset($context["text_security"]) ? $context["text_security"] : null);
         echo "</legend>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\"><span data-toggle=\"tooltip\" title=\"";
-        // line 1216
+        // line 1236
         echo (isset($context["help_secure"]) ? $context["help_secure"] : null);
         echo "\">";
         echo (isset($context["entry_secure"]) ? $context["entry_secure"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <label class=\"radio-inline\"> ";
-        // line 1218
+        // line 1238
         if ((isset($context["config_secure"]) ? $context["config_secure"] : null)) {
-            // line 1219
+            // line 1239
             echo "                      <input type=\"radio\" name=\"config_secure\" value=\"1\" checked=\"checked\" />
                       ";
-            // line 1220
+            // line 1240
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         } else {
-            // line 1222
+            // line 1242
             echo "                      <input type=\"radio\" name=\"config_secure\" value=\"1\" />
                       ";
-            // line 1223
+            // line 1243
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         }
-        // line 1224
+        // line 1244
         echo " </label>
                     <label class=\"radio-inline\"> ";
-        // line 1225
+        // line 1245
         if ( !(isset($context["config_secure"]) ? $context["config_secure"] : null)) {
-            // line 1226
+            // line 1246
             echo "                      <input type=\"radio\" name=\"config_secure\" value=\"0\" checked=\"checked\" />
                       ";
-            // line 1227
+            // line 1247
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         } else {
-            // line 1229
+            // line 1249
             echo "                      <input type=\"radio\" name=\"config_secure\" value=\"0\" />
                       ";
-            // line 1230
+            // line 1250
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         }
-        // line 1231
+        // line 1251
         echo " </label>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\"><span data-toggle=\"tooltip\" title=\"";
-        // line 1235
+        // line 1255
         echo (isset($context["help_password"]) ? $context["help_password"] : null);
         echo "\">";
         echo (isset($context["entry_password"]) ? $context["entry_password"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <label class=\"radio-inline\"> ";
-        // line 1237
+        // line 1257
         if ((isset($context["config_password"]) ? $context["config_password"] : null)) {
-            // line 1238
+            // line 1258
             echo "                      <input type=\"radio\" name=\"config_password\" value=\"1\" checked=\"checked\" />
                       ";
-            // line 1239
+            // line 1259
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         } else {
-            // line 1241
+            // line 1261
             echo "                      <input type=\"radio\" name=\"config_password\" value=\"1\" />
                       ";
-            // line 1242
+            // line 1262
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         }
-        // line 1243
+        // line 1263
         echo " </label>
                     <label class=\"radio-inline\"> ";
-        // line 1244
+        // line 1264
         if ( !(isset($context["config_password"]) ? $context["config_password"] : null)) {
-            // line 1245
+            // line 1265
             echo "                      <input type=\"radio\" name=\"config_password\" value=\"0\" checked=\"checked\" />
                       ";
-            // line 1246
+            // line 1266
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         } else {
-            // line 1248
+            // line 1268
             echo "                      <input type=\"radio\" name=\"config_password\" value=\"0\" />
                       ";
-            // line 1249
+            // line 1269
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         }
-        // line 1250
+        // line 1270
         echo " </label>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\"><span data-toggle=\"tooltip\" title=\"";
-        // line 1254
+        // line 1274
         echo (isset($context["help_shared"]) ? $context["help_shared"] : null);
         echo "\">";
         echo (isset($context["entry_shared"]) ? $context["entry_shared"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <label class=\"radio-inline\"> ";
-        // line 1256
+        // line 1276
         if ((isset($context["config_shared"]) ? $context["config_shared"] : null)) {
-            // line 1257
+            // line 1277
             echo "                      <input type=\"radio\" name=\"config_shared\" value=\"1\" checked=\"checked\" />
                       ";
-            // line 1258
+            // line 1278
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         } else {
-            // line 1260
+            // line 1280
             echo "                      <input type=\"radio\" name=\"config_shared\" value=\"1\" />
                       ";
-            // line 1261
+            // line 1281
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         }
-        // line 1262
+        // line 1282
         echo " </label>
                     <label class=\"radio-inline\"> ";
-        // line 1263
+        // line 1283
         if ( !(isset($context["config_shared"]) ? $context["config_shared"] : null)) {
-            // line 1264
+            // line 1284
             echo "                      <input type=\"radio\" name=\"config_shared\" value=\"0\" checked=\"checked\" />
                       ";
-            // line 1265
+            // line 1285
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         } else {
-            // line 1267
+            // line 1287
             echo "                      <input type=\"radio\" name=\"config_shared\" value=\"0\" />
                       ";
-            // line 1268
+            // line 1288
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         }
-        // line 1269
+        // line 1289
         echo " </label>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-encryption\"><span data-toggle=\"tooltip\" title=\"";
-        // line 1273
+        // line 1293
         echo (isset($context["help_encryption"]) ? $context["help_encryption"] : null);
         echo "\">";
         echo (isset($context["entry_encryption"]) ? $context["entry_encryption"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <textarea name=\"config_encryption\" rows=\"5\" placeholder=\"";
-        // line 1275
+        // line 1295
         echo (isset($context["entry_encryption"]) ? $context["entry_encryption"] : null);
         echo "\" id=\"input-encryption\" class=\"form-control\">";
         echo (isset($context["config_encryption"]) ? $context["config_encryption"] : null);
         echo "</textarea>
                     ";
-        // line 1276
+        // line 1296
         if ((isset($context["error_encryption"]) ? $context["error_encryption"] : null)) {
-            // line 1277
+            // line 1297
             echo "                    <div class=\"text-danger\">";
             echo (isset($context["error_encryption"]) ? $context["error_encryption"] : null);
             echo "</div>
                     ";
         }
-        // line 1278
+        // line 1298
         echo " </div>
                 </div>
               </fieldset>
               <fieldset>
                 <legend>";
-        // line 1282
+        // line 1302
         echo (isset($context["text_upload"]) ? $context["text_upload"] : null);
         echo "</legend>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-file-max-size\"><span data-toggle=\"tooltip\" title=\"";
-        // line 1284
+        // line 1304
         echo (isset($context["help_file_max_size"]) ? $context["help_file_max_size"] : null);
         echo "\">";
         echo (isset($context["entry_file_max_size"]) ? $context["entry_file_max_size"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <input type=\"text\" name=\"config_file_max_size\" value=\"";
-        // line 1286
+        // line 1306
         echo (isset($context["config_file_max_size"]) ? $context["config_file_max_size"] : null);
         echo "\" placeholder=\"";
         echo (isset($context["entry_file_max_size"]) ? $context["entry_file_max_size"] : null);
@@ -3416,14 +3453,14 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-file-ext-allowed\"><span data-toggle=\"tooltip\" title=\"";
-        // line 1290
+        // line 1310
         echo (isset($context["help_file_ext_allowed"]) ? $context["help_file_ext_allowed"] : null);
         echo "\">";
         echo (isset($context["entry_file_ext_allowed"]) ? $context["entry_file_ext_allowed"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <textarea name=\"config_file_ext_allowed\" rows=\"5\" placeholder=\"";
-        // line 1292
+        // line 1312
         echo (isset($context["entry_file_ext_allowed"]) ? $context["entry_file_ext_allowed"] : null);
         echo "\" id=\"input-file-ext-allowed\" class=\"form-control\">";
         echo (isset($context["config_file_ext_allowed"]) ? $context["config_file_ext_allowed"] : null);
@@ -3432,14 +3469,14 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\" for=\"input-file-mime-allowed\"><span data-toggle=\"tooltip\" title=\"";
-        // line 1296
+        // line 1316
         echo (isset($context["help_file_mime_allowed"]) ? $context["help_file_mime_allowed"] : null);
         echo "\">";
         echo (isset($context["entry_file_mime_allowed"]) ? $context["entry_file_mime_allowed"] : null);
         echo "</span></label>
                   <div class=\"col-sm-10\">
                     <textarea name=\"config_file_mime_allowed\" rows=\"5\" placeholder=\"";
-        // line 1298
+        // line 1318
         echo (isset($context["entry_file_mime_allowed"]) ? $context["entry_file_mime_allowed"] : null);
         echo "\" id=\"input-file-mime-allowed\" class=\"form-control\">";
         echo (isset($context["config_file_mime_allowed"]) ? $context["config_file_mime_allowed"] : null);
@@ -3449,131 +3486,131 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
               </fieldset>
               <fieldset>
                 <legend>";
-        // line 1303
+        // line 1323
         echo (isset($context["text_error"]) ? $context["text_error"] : null);
         echo "</legend>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\">";
-        // line 1305
+        // line 1325
         echo (isset($context["entry_error_display"]) ? $context["entry_error_display"] : null);
         echo "</label>
                   <div class=\"col-sm-10\">
                     <label class=\"radio-inline\"> ";
-        // line 1307
+        // line 1327
         if ((isset($context["config_error_display"]) ? $context["config_error_display"] : null)) {
-            // line 1308
+            // line 1328
             echo "                      <input type=\"radio\" name=\"config_error_display\" value=\"1\" checked=\"checked\" />
                       ";
-            // line 1309
+            // line 1329
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         } else {
-            // line 1311
+            // line 1331
             echo "                      <input type=\"radio\" name=\"config_error_display\" value=\"1\" />
                       ";
-            // line 1312
+            // line 1332
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         }
-        // line 1313
+        // line 1333
         echo " </label>
                     <label class=\"radio-inline\"> ";
-        // line 1314
+        // line 1334
         if ( !(isset($context["config_error_display"]) ? $context["config_error_display"] : null)) {
-            // line 1315
+            // line 1335
             echo "                      <input type=\"radio\" name=\"config_error_display\" value=\"0\" checked=\"checked\" />
                       ";
-            // line 1316
+            // line 1336
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         } else {
-            // line 1318
+            // line 1338
             echo "                      <input type=\"radio\" name=\"config_error_display\" value=\"0\" />
                       ";
-            // line 1319
+            // line 1339
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         }
-        // line 1320
+        // line 1340
         echo " </label>
                   </div>
                 </div>
                 <div class=\"form-group\">
                   <label class=\"col-sm-2 control-label\">";
-        // line 1324
+        // line 1344
         echo (isset($context["entry_error_log"]) ? $context["entry_error_log"] : null);
         echo "</label>
                   <div class=\"col-sm-10\">
                     <label class=\"radio-inline\"> ";
-        // line 1326
+        // line 1346
         if ((isset($context["config_error_log"]) ? $context["config_error_log"] : null)) {
-            // line 1327
+            // line 1347
             echo "                      <input type=\"radio\" name=\"config_error_log\" value=\"1\" checked=\"checked\" />
                       ";
-            // line 1328
+            // line 1348
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         } else {
-            // line 1330
+            // line 1350
             echo "                      <input type=\"radio\" name=\"config_error_log\" value=\"1\" />
                       ";
-            // line 1331
+            // line 1351
             echo (isset($context["text_yes"]) ? $context["text_yes"] : null);
             echo "
                       ";
         }
-        // line 1332
+        // line 1352
         echo " </label>
                     <label class=\"radio-inline\"> ";
-        // line 1333
+        // line 1353
         if ( !(isset($context["config_error_log"]) ? $context["config_error_log"] : null)) {
-            // line 1334
+            // line 1354
             echo "                      <input type=\"radio\" name=\"config_error_log\" value=\"0\" checked=\"checked\" />
                       ";
-            // line 1335
+            // line 1355
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         } else {
-            // line 1337
+            // line 1357
             echo "                      <input type=\"radio\" name=\"config_error_log\" value=\"0\" />
                       ";
-            // line 1338
+            // line 1358
             echo (isset($context["text_no"]) ? $context["text_no"] : null);
             echo "
                       ";
         }
-        // line 1339
+        // line 1359
         echo "</label>
                   </div>
                 </div>
                 <div class=\"form-group required\">
                   <label class=\"col-sm-2 control-label\" for=\"input-error-filename\">";
-        // line 1343
+        // line 1363
         echo (isset($context["entry_error_filename"]) ? $context["entry_error_filename"] : null);
         echo "</label>
                   <div class=\"col-sm-10\">
                     <input type=\"text\" name=\"config_error_filename\" value=\"";
-        // line 1345
+        // line 1365
         echo (isset($context["config_error_filename"]) ? $context["config_error_filename"] : null);
         echo "\" placeholder=\"";
         echo (isset($context["entry_error_filename"]) ? $context["entry_error_filename"] : null);
         echo "\" id=\"input-error-filename\" class=\"form-control\" />
                     ";
-        // line 1346
+        // line 1366
         if ((isset($context["error_log"]) ? $context["error_log"] : null)) {
-            // line 1347
+            // line 1367
             echo "                    <div class=\"text-danger\">";
             echo (isset($context["error_log"]) ? $context["error_log"] : null);
             echo "</div>
                     ";
         }
-        // line 1348
+        // line 1368
         echo " </div>
                 </div>
               </fieldset>
@@ -3587,7 +3624,7 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
 \$('select[name=\\'config_theme\\']').on('change', function() {
 \t\$.ajax({
 \t\turl: 'index.php?route=setting/setting/theme&user_token=";
-        // line 1360
+        // line 1380
         echo (isset($context["user_token"]) ? $context["user_token"] : null);
         echo "&theme=' + this.value,
 \t\tdataType: 'html',
@@ -3612,7 +3649,7 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
 \$('select[name=\\'config_country_id\\']').on('change', function() {
 \t\$.ajax({
 \t\turl: 'index.php?route=localisation/country/country&user_token=";
-        // line 1382
+        // line 1402
         echo (isset($context["user_token"]) ? $context["user_token"] : null);
         echo "&country_id=' + this.value,
 \t\tdataType: 'json',
@@ -3624,7 +3661,7 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
 \t\t},
 \t\tsuccess: function(json) {
 \t\t\thtml = '<option value=\"\">";
-        // line 1391
+        // line 1411
         echo (isset($context["text_select"]) ? $context["text_select"] : null);
         echo "</option>';
 
@@ -3633,7 +3670,7 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
           \t\t\thtml += '<option value=\"' + json['zone'][i]['zone_id'] + '\"';
 
 \t\t\t\t\tif (json['zone'][i]['zone_id'] == '";
-        // line 1397
+        // line 1417
         echo (isset($context["config_zone_id"]) ? $context["config_zone_id"] : null);
         echo "') {
             \t\t\thtml += ' selected=\"selected\"';
@@ -3643,7 +3680,7 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
 \t\t\t\t}
 \t\t\t} else {
 \t\t\t\thtml += '<option value=\"0\" selected=\"selected\">";
-        // line 1404
+        // line 1424
         echo (isset($context["text_none"]) ? $context["text_none"] : null);
         echo "</option>';
 \t\t\t}
@@ -3661,7 +3698,7 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
 \$('select[name=\\'config_country_id\\']').trigger('change');
 //--></script></div>
 ";
-        // line 1419
+        // line 1439
         echo (isset($context["footer"]) ? $context["footer"] : null);
         echo " ";
     }
@@ -3678,7 +3715,7 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
 
     public function getDebugInfo()
     {
-        return array (  3665 => 1419,  3647 => 1404,  3637 => 1397,  3628 => 1391,  3616 => 1382,  3591 => 1360,  3577 => 1348,  3571 => 1347,  3569 => 1346,  3563 => 1345,  3558 => 1343,  3552 => 1339,  3547 => 1338,  3544 => 1337,  3539 => 1335,  3536 => 1334,  3534 => 1333,  3531 => 1332,  3526 => 1331,  3523 => 1330,  3518 => 1328,  3515 => 1327,  3513 => 1326,  3508 => 1324,  3502 => 1320,  3497 => 1319,  3494 => 1318,  3489 => 1316,  3486 => 1315,  3484 => 1314,  3481 => 1313,  3476 => 1312,  3473 => 1311,  3468 => 1309,  3465 => 1308,  3463 => 1307,  3458 => 1305,  3453 => 1303,  3443 => 1298,  3436 => 1296,  3427 => 1292,  3420 => 1290,  3411 => 1286,  3404 => 1284,  3399 => 1282,  3393 => 1278,  3387 => 1277,  3385 => 1276,  3379 => 1275,  3372 => 1273,  3366 => 1269,  3361 => 1268,  3358 => 1267,  3353 => 1265,  3350 => 1264,  3348 => 1263,  3345 => 1262,  3340 => 1261,  3337 => 1260,  3332 => 1258,  3329 => 1257,  3327 => 1256,  3320 => 1254,  3314 => 1250,  3309 => 1249,  3306 => 1248,  3301 => 1246,  3298 => 1245,  3296 => 1244,  3293 => 1243,  3288 => 1242,  3285 => 1241,  3280 => 1239,  3277 => 1238,  3275 => 1237,  3268 => 1235,  3262 => 1231,  3257 => 1230,  3254 => 1229,  3249 => 1227,  3246 => 1226,  3244 => 1225,  3241 => 1224,  3236 => 1223,  3233 => 1222,  3228 => 1220,  3225 => 1219,  3223 => 1218,  3216 => 1216,  3211 => 1214,  3201 => 1209,  3194 => 1207,  3185 => 1203,  3178 => 1201,  3172 => 1197,  3167 => 1196,  3164 => 1195,  3159 => 1193,  3156 => 1192,  3154 => 1191,  3151 => 1190,  3146 => 1189,  3143 => 1188,  3138 => 1186,  3135 => 1185,  3133 => 1184,  3126 => 1182,  3120 => 1178,  3115 => 1177,  3112 => 1176,  3107 => 1174,  3104 => 1173,  3102 => 1172,  3099 => 1171,  3094 => 1170,  3091 => 1169,  3086 => 1167,  3083 => 1166,  3081 => 1165,  3074 => 1163,  3069 => 1161,  3057 => 1154,  3050 => 1152,  3044 => 1148,  3036 => 1146,  3031 => 1145,  3026 => 1144,  3021 => 1142,  3016 => 1141,  3014 => 1140,  3011 => 1139,  3007 => 1138,  3000 => 1136,  2995 => 1134,  2985 => 1129,  2980 => 1127,  2971 => 1123,  2966 => 1121,  2957 => 1117,  2950 => 1115,  2941 => 1111,  2936 => 1109,  2927 => 1105,  2920 => 1103,  2911 => 1099,  2904 => 1097,  2897 => 1092,  2891 => 1089,  2888 => 1088,  2882 => 1085,  2879 => 1084,  2876 => 1083,  2870 => 1080,  2867 => 1079,  2861 => 1076,  2858 => 1075,  2856 => 1074,  2847 => 1070,  2842 => 1068,  2833 => 1062,  2827 => 1061,  2821 => 1060,  2814 => 1056,  2808 => 1055,  2804 => 1054,  2795 => 1047,  2787 => 1045,  2782 => 1044,  2777 => 1043,  2772 => 1041,  2767 => 1040,  2765 => 1039,  2762 => 1038,  2758 => 1037,  2753 => 1035,  2746 => 1030,  2740 => 1029,  2732 => 1026,  2729 => 1025,  2721 => 1022,  2718 => 1021,  2715 => 1020,  2711 => 1019,  2706 => 1017,  2698 => 1014,  2693 => 1012,  2685 => 1006,  2679 => 1005,  2671 => 1002,  2668 => 1001,  2660 => 998,  2657 => 997,  2654 => 996,  2650 => 995,  2641 => 991,  2634 => 986,  2628 => 985,  2620 => 982,  2617 => 981,  2609 => 978,  2606 => 977,  2603 => 976,  2599 => 975,  2594 => 973,  2586 => 970,  2581 => 968,  2573 => 962,  2567 => 961,  2559 => 958,  2556 => 957,  2548 => 954,  2545 => 953,  2542 => 952,  2538 => 951,  2533 => 949,  2525 => 946,  2516 => 942,  2509 => 940,  2503 => 936,  2498 => 935,  2495 => 934,  2490 => 932,  2487 => 931,  2485 => 930,  2482 => 929,  2477 => 928,  2474 => 927,  2469 => 925,  2466 => 924,  2464 => 923,  2457 => 921,  2451 => 917,  2446 => 916,  2443 => 915,  2438 => 913,  2435 => 912,  2433 => 911,  2430 => 910,  2425 => 909,  2422 => 908,  2417 => 906,  2414 => 905,  2412 => 904,  2405 => 902,  2398 => 897,  2392 => 896,  2384 => 893,  2381 => 892,  2373 => 889,  2370 => 888,  2367 => 887,  2363 => 886,  2356 => 882,  2351 => 880,  2344 => 875,  2339 => 874,  2336 => 873,  2331 => 871,  2328 => 870,  2326 => 869,  2323 => 868,  2318 => 867,  2315 => 866,  2310 => 864,  2307 => 863,  2305 => 862,  2298 => 860,  2292 => 856,  2287 => 855,  2284 => 854,  2279 => 852,  2276 => 851,  2274 => 850,  2271 => 849,  2266 => 848,  2263 => 847,  2258 => 845,  2255 => 844,  2253 => 843,  2246 => 841,  2240 => 837,  2235 => 836,  2232 => 835,  2227 => 833,  2224 => 832,  2222 => 831,  2219 => 830,  2214 => 829,  2211 => 828,  2206 => 826,  2203 => 825,  2201 => 824,  2194 => 822,  2189 => 820,  2181 => 814,  2175 => 813,  2167 => 810,  2164 => 809,  2156 => 806,  2153 => 805,  2150 => 804,  2146 => 803,  2141 => 801,  2133 => 798,  2126 => 793,  2120 => 792,  2112 => 789,  2109 => 788,  2101 => 785,  2098 => 784,  2095 => 783,  2091 => 782,  2082 => 778,  2077 => 775,  2071 => 774,  2069 => 773,  2066 => 772,  2058 => 770,  2053 => 769,  2048 => 768,  2043 => 766,  2038 => 765,  2036 => 764,  2033 => 763,  2029 => 762,  2022 => 760,  2017 => 757,  2011 => 756,  2009 => 755,  2006 => 754,  1998 => 752,  1993 => 751,  1988 => 750,  1983 => 748,  1978 => 747,  1976 => 746,  1973 => 745,  1969 => 744,  1962 => 742,  1955 => 737,  1949 => 736,  1941 => 733,  1938 => 732,  1930 => 729,  1927 => 728,  1924 => 727,  1920 => 726,  1911 => 722,  1904 => 717,  1898 => 716,  1890 => 713,  1887 => 712,  1879 => 709,  1876 => 708,  1873 => 707,  1869 => 706,  1864 => 704,  1856 => 701,  1850 => 697,  1845 => 696,  1842 => 695,  1837 => 693,  1834 => 692,  1832 => 691,  1829 => 690,  1824 => 689,  1821 => 688,  1816 => 686,  1813 => 685,  1811 => 684,  1804 => 682,  1798 => 678,  1793 => 677,  1790 => 676,  1785 => 674,  1782 => 673,  1780 => 672,  1777 => 671,  1772 => 670,  1769 => 669,  1764 => 667,  1761 => 666,  1759 => 665,  1752 => 663,  1743 => 659,  1736 => 657,  1731 => 655,  1723 => 649,  1717 => 648,  1709 => 645,  1706 => 644,  1698 => 641,  1695 => 640,  1692 => 639,  1688 => 638,  1683 => 636,  1675 => 633,  1670 => 630,  1664 => 629,  1662 => 628,  1656 => 627,  1649 => 625,  1643 => 621,  1638 => 620,  1635 => 619,  1630 => 617,  1627 => 616,  1625 => 615,  1622 => 614,  1617 => 613,  1614 => 612,  1609 => 610,  1606 => 609,  1604 => 608,  1597 => 606,  1592 => 603,  1586 => 602,  1583 => 601,  1575 => 598,  1570 => 597,  1565 => 596,  1560 => 594,  1555 => 593,  1553 => 592,  1550 => 591,  1546 => 590,  1540 => 589,  1533 => 584,  1527 => 583,  1519 => 580,  1516 => 579,  1508 => 576,  1505 => 575,  1502 => 574,  1498 => 573,  1489 => 569,  1483 => 565,  1478 => 564,  1475 => 563,  1470 => 561,  1467 => 560,  1465 => 559,  1462 => 558,  1457 => 557,  1454 => 556,  1449 => 554,  1446 => 553,  1444 => 552,  1439 => 550,  1433 => 546,  1428 => 545,  1425 => 544,  1420 => 542,  1417 => 541,  1415 => 540,  1412 => 539,  1407 => 538,  1404 => 537,  1399 => 535,  1396 => 534,  1394 => 533,  1387 => 531,  1381 => 527,  1376 => 526,  1373 => 525,  1368 => 523,  1365 => 522,  1363 => 521,  1360 => 520,  1355 => 519,  1352 => 518,  1347 => 516,  1344 => 515,  1342 => 514,  1335 => 512,  1330 => 510,  1322 => 504,  1316 => 501,  1313 => 500,  1307 => 497,  1304 => 496,  1301 => 495,  1295 => 492,  1292 => 491,  1286 => 488,  1283 => 487,  1281 => 486,  1276 => 484,  1268 => 481,  1261 => 476,  1255 => 473,  1252 => 472,  1246 => 469,  1243 => 468,  1240 => 467,  1234 => 464,  1231 => 463,  1225 => 460,  1222 => 459,  1220 => 458,  1215 => 456,  1207 => 453,  1201 => 449,  1196 => 448,  1193 => 447,  1188 => 445,  1185 => 444,  1183 => 443,  1180 => 442,  1175 => 441,  1172 => 440,  1167 => 438,  1164 => 437,  1162 => 436,  1157 => 434,  1152 => 432,  1146 => 428,  1140 => 427,  1138 => 426,  1132 => 425,  1125 => 423,  1120 => 420,  1114 => 419,  1112 => 418,  1106 => 417,  1099 => 415,  1094 => 413,  1087 => 408,  1082 => 407,  1079 => 406,  1074 => 404,  1071 => 403,  1069 => 402,  1066 => 401,  1061 => 400,  1058 => 399,  1053 => 397,  1050 => 396,  1048 => 395,  1041 => 393,  1035 => 389,  1030 => 388,  1027 => 387,  1022 => 385,  1019 => 384,  1017 => 383,  1014 => 382,  1009 => 381,  1006 => 380,  1001 => 378,  998 => 377,  996 => 376,  989 => 374,  984 => 372,  978 => 368,  972 => 367,  970 => 366,  964 => 365,  957 => 363,  951 => 359,  946 => 358,  943 => 357,  938 => 355,  935 => 354,  933 => 353,  930 => 352,  925 => 351,  922 => 350,  917 => 348,  914 => 347,  912 => 346,  905 => 344,  900 => 342,  891 => 335,  885 => 334,  877 => 331,  874 => 330,  866 => 327,  863 => 326,  860 => 325,  856 => 324,  849 => 320,  842 => 315,  836 => 314,  828 => 311,  825 => 310,  817 => 307,  814 => 306,  811 => 305,  807 => 304,  800 => 300,  794 => 296,  789 => 295,  786 => 294,  781 => 292,  778 => 291,  776 => 290,  773 => 289,  768 => 288,  765 => 287,  760 => 285,  757 => 284,  755 => 283,  748 => 281,  741 => 276,  735 => 275,  727 => 272,  724 => 271,  716 => 268,  713 => 267,  710 => 266,  706 => 265,  697 => 261,  690 => 256,  684 => 255,  676 => 252,  673 => 251,  665 => 248,  662 => 247,  659 => 246,  655 => 245,  648 => 241,  641 => 236,  635 => 235,  627 => 232,  624 => 231,  616 => 228,  613 => 227,  610 => 226,  606 => 225,  599 => 221,  589 => 214,  582 => 209,  576 => 208,  568 => 205,  565 => 204,  557 => 201,  554 => 200,  551 => 199,  547 => 198,  540 => 194,  535 => 191,  530 => 189,  522 => 187,  517 => 186,  512 => 185,  507 => 183,  502 => 182,  500 => 181,  497 => 180,  493 => 179,  487 => 178,  484 => 177,  482 => 176,  474 => 173,  467 => 171,  458 => 167,  451 => 165,  444 => 161,  438 => 160,  434 => 159,  425 => 155,  420 => 153,  415 => 150,  409 => 149,  407 => 148,  401 => 147,  396 => 145,  391 => 142,  385 => 141,  383 => 140,  377 => 139,  372 => 137,  363 => 133,  356 => 131,  351 => 128,  345 => 127,  343 => 126,  337 => 125,  332 => 123,  327 => 120,  321 => 119,  319 => 118,  313 => 117,  308 => 115,  303 => 112,  297 => 111,  295 => 110,  289 => 109,  284 => 107,  275 => 100,  269 => 99,  261 => 96,  258 => 95,  250 => 92,  247 => 91,  244 => 90,  240 => 89,  233 => 85,  225 => 79,  219 => 78,  211 => 75,  208 => 74,  200 => 71,  197 => 70,  194 => 69,  190 => 68,  183 => 64,  174 => 60,  169 => 58,  160 => 54,  155 => 52,  150 => 49,  144 => 48,  142 => 47,  136 => 46,  131 => 44,  123 => 39,  119 => 38,  115 => 37,  111 => 36,  107 => 35,  103 => 34,  99 => 33,  94 => 31,  88 => 28,  84 => 26,  76 => 22,  73 => 21,  65 => 17,  63 => 16,  58 => 13,  47 => 11,  43 => 10,  38 => 8,  32 => 7,  28 => 6,  19 => 1,);
+        return array (  3702 => 1439,  3684 => 1424,  3674 => 1417,  3665 => 1411,  3653 => 1402,  3628 => 1380,  3614 => 1368,  3608 => 1367,  3606 => 1366,  3600 => 1365,  3595 => 1363,  3589 => 1359,  3584 => 1358,  3581 => 1357,  3576 => 1355,  3573 => 1354,  3571 => 1353,  3568 => 1352,  3563 => 1351,  3560 => 1350,  3555 => 1348,  3552 => 1347,  3550 => 1346,  3545 => 1344,  3539 => 1340,  3534 => 1339,  3531 => 1338,  3526 => 1336,  3523 => 1335,  3521 => 1334,  3518 => 1333,  3513 => 1332,  3510 => 1331,  3505 => 1329,  3502 => 1328,  3500 => 1327,  3495 => 1325,  3490 => 1323,  3480 => 1318,  3473 => 1316,  3464 => 1312,  3457 => 1310,  3448 => 1306,  3441 => 1304,  3436 => 1302,  3430 => 1298,  3424 => 1297,  3422 => 1296,  3416 => 1295,  3409 => 1293,  3403 => 1289,  3398 => 1288,  3395 => 1287,  3390 => 1285,  3387 => 1284,  3385 => 1283,  3382 => 1282,  3377 => 1281,  3374 => 1280,  3369 => 1278,  3366 => 1277,  3364 => 1276,  3357 => 1274,  3351 => 1270,  3346 => 1269,  3343 => 1268,  3338 => 1266,  3335 => 1265,  3333 => 1264,  3330 => 1263,  3325 => 1262,  3322 => 1261,  3317 => 1259,  3314 => 1258,  3312 => 1257,  3305 => 1255,  3299 => 1251,  3294 => 1250,  3291 => 1249,  3286 => 1247,  3283 => 1246,  3281 => 1245,  3278 => 1244,  3273 => 1243,  3270 => 1242,  3265 => 1240,  3262 => 1239,  3260 => 1238,  3253 => 1236,  3248 => 1234,  3238 => 1229,  3231 => 1227,  3222 => 1223,  3215 => 1221,  3209 => 1217,  3204 => 1216,  3201 => 1215,  3196 => 1213,  3193 => 1212,  3191 => 1211,  3188 => 1210,  3183 => 1209,  3180 => 1208,  3175 => 1206,  3172 => 1205,  3170 => 1204,  3163 => 1202,  3157 => 1198,  3152 => 1197,  3149 => 1196,  3144 => 1194,  3141 => 1193,  3139 => 1192,  3136 => 1191,  3131 => 1190,  3128 => 1189,  3123 => 1187,  3120 => 1186,  3118 => 1185,  3111 => 1183,  3106 => 1181,  3094 => 1174,  3087 => 1172,  3081 => 1168,  3073 => 1166,  3068 => 1165,  3063 => 1164,  3058 => 1162,  3053 => 1161,  3051 => 1160,  3048 => 1159,  3044 => 1158,  3037 => 1156,  3032 => 1154,  3022 => 1149,  3017 => 1147,  3008 => 1143,  3003 => 1141,  2994 => 1137,  2987 => 1135,  2978 => 1131,  2973 => 1129,  2964 => 1125,  2957 => 1123,  2948 => 1119,  2941 => 1117,  2934 => 1112,  2928 => 1109,  2925 => 1108,  2919 => 1105,  2916 => 1104,  2913 => 1103,  2907 => 1100,  2904 => 1099,  2898 => 1096,  2895 => 1095,  2893 => 1094,  2884 => 1090,  2879 => 1088,  2870 => 1082,  2864 => 1081,  2858 => 1080,  2851 => 1076,  2845 => 1075,  2841 => 1074,  2832 => 1067,  2824 => 1065,  2819 => 1064,  2814 => 1063,  2809 => 1061,  2804 => 1060,  2802 => 1059,  2799 => 1058,  2795 => 1057,  2790 => 1055,  2783 => 1050,  2777 => 1049,  2769 => 1046,  2766 => 1045,  2758 => 1042,  2755 => 1041,  2752 => 1040,  2748 => 1039,  2743 => 1037,  2735 => 1034,  2730 => 1032,  2722 => 1026,  2716 => 1025,  2708 => 1022,  2705 => 1021,  2697 => 1018,  2694 => 1017,  2691 => 1016,  2687 => 1015,  2678 => 1011,  2671 => 1006,  2665 => 1005,  2657 => 1002,  2654 => 1001,  2646 => 998,  2643 => 997,  2640 => 996,  2636 => 995,  2631 => 993,  2623 => 990,  2618 => 988,  2610 => 982,  2604 => 981,  2596 => 978,  2593 => 977,  2585 => 974,  2582 => 973,  2579 => 972,  2575 => 971,  2570 => 969,  2562 => 966,  2553 => 962,  2546 => 960,  2540 => 956,  2535 => 955,  2532 => 954,  2527 => 952,  2524 => 951,  2522 => 950,  2519 => 949,  2514 => 948,  2511 => 947,  2506 => 945,  2503 => 944,  2501 => 943,  2494 => 941,  2488 => 937,  2483 => 936,  2480 => 935,  2475 => 933,  2472 => 932,  2470 => 931,  2467 => 930,  2462 => 929,  2459 => 928,  2454 => 926,  2451 => 925,  2449 => 924,  2442 => 922,  2435 => 917,  2429 => 916,  2421 => 913,  2418 => 912,  2410 => 909,  2407 => 908,  2404 => 907,  2400 => 906,  2393 => 902,  2388 => 900,  2381 => 895,  2376 => 894,  2373 => 893,  2368 => 891,  2365 => 890,  2363 => 889,  2360 => 888,  2355 => 887,  2352 => 886,  2347 => 884,  2344 => 883,  2342 => 882,  2335 => 880,  2329 => 876,  2324 => 875,  2321 => 874,  2316 => 872,  2313 => 871,  2311 => 870,  2308 => 869,  2303 => 868,  2300 => 867,  2295 => 865,  2292 => 864,  2290 => 863,  2283 => 861,  2277 => 857,  2272 => 856,  2269 => 855,  2264 => 853,  2261 => 852,  2259 => 851,  2256 => 850,  2251 => 849,  2248 => 848,  2243 => 846,  2240 => 845,  2238 => 844,  2231 => 842,  2226 => 840,  2218 => 834,  2212 => 833,  2204 => 830,  2201 => 829,  2193 => 826,  2190 => 825,  2187 => 824,  2183 => 823,  2178 => 821,  2170 => 818,  2163 => 813,  2157 => 812,  2149 => 809,  2146 => 808,  2138 => 805,  2135 => 804,  2132 => 803,  2128 => 802,  2119 => 798,  2114 => 795,  2108 => 794,  2106 => 793,  2103 => 792,  2095 => 790,  2090 => 789,  2085 => 788,  2080 => 786,  2075 => 785,  2073 => 784,  2070 => 783,  2066 => 782,  2059 => 780,  2054 => 777,  2048 => 776,  2046 => 775,  2043 => 774,  2035 => 772,  2030 => 771,  2025 => 770,  2020 => 768,  2015 => 767,  2013 => 766,  2010 => 765,  2006 => 764,  1999 => 762,  1992 => 757,  1986 => 756,  1978 => 753,  1975 => 752,  1967 => 749,  1964 => 748,  1961 => 747,  1957 => 746,  1948 => 742,  1941 => 737,  1935 => 736,  1927 => 733,  1924 => 732,  1916 => 729,  1913 => 728,  1910 => 727,  1906 => 726,  1901 => 724,  1893 => 721,  1887 => 717,  1882 => 716,  1879 => 715,  1874 => 713,  1871 => 712,  1869 => 711,  1866 => 710,  1861 => 709,  1858 => 708,  1853 => 706,  1850 => 705,  1848 => 704,  1841 => 702,  1835 => 698,  1830 => 697,  1827 => 696,  1822 => 694,  1819 => 693,  1817 => 692,  1814 => 691,  1809 => 690,  1806 => 689,  1801 => 687,  1798 => 686,  1796 => 685,  1789 => 683,  1780 => 679,  1773 => 677,  1768 => 675,  1760 => 669,  1754 => 668,  1746 => 665,  1743 => 664,  1735 => 661,  1732 => 660,  1729 => 659,  1725 => 658,  1720 => 656,  1712 => 653,  1707 => 650,  1701 => 649,  1699 => 648,  1693 => 647,  1686 => 645,  1680 => 641,  1675 => 640,  1672 => 639,  1667 => 637,  1664 => 636,  1662 => 635,  1659 => 634,  1654 => 633,  1651 => 632,  1646 => 630,  1643 => 629,  1641 => 628,  1634 => 626,  1629 => 623,  1623 => 622,  1620 => 621,  1612 => 618,  1607 => 617,  1602 => 616,  1597 => 614,  1592 => 613,  1590 => 612,  1587 => 611,  1583 => 610,  1577 => 609,  1570 => 604,  1564 => 603,  1556 => 600,  1553 => 599,  1545 => 596,  1542 => 595,  1539 => 594,  1535 => 593,  1526 => 589,  1520 => 585,  1515 => 584,  1512 => 583,  1507 => 581,  1504 => 580,  1502 => 579,  1499 => 578,  1494 => 577,  1491 => 576,  1486 => 574,  1483 => 573,  1481 => 572,  1476 => 570,  1470 => 566,  1465 => 565,  1462 => 564,  1457 => 562,  1454 => 561,  1452 => 560,  1449 => 559,  1444 => 558,  1441 => 557,  1436 => 555,  1433 => 554,  1431 => 553,  1424 => 551,  1418 => 547,  1413 => 546,  1410 => 545,  1405 => 543,  1402 => 542,  1400 => 541,  1397 => 540,  1392 => 539,  1389 => 538,  1384 => 536,  1381 => 535,  1379 => 534,  1372 => 532,  1367 => 530,  1359 => 524,  1353 => 521,  1350 => 520,  1344 => 517,  1341 => 516,  1338 => 515,  1332 => 512,  1329 => 511,  1323 => 508,  1320 => 507,  1318 => 506,  1313 => 504,  1305 => 501,  1298 => 496,  1292 => 493,  1289 => 492,  1283 => 489,  1280 => 488,  1277 => 487,  1271 => 484,  1268 => 483,  1262 => 480,  1259 => 479,  1257 => 478,  1252 => 476,  1244 => 473,  1238 => 469,  1233 => 468,  1230 => 467,  1225 => 465,  1222 => 464,  1220 => 463,  1217 => 462,  1212 => 461,  1209 => 460,  1204 => 458,  1201 => 457,  1199 => 456,  1194 => 454,  1189 => 452,  1183 => 448,  1177 => 447,  1175 => 446,  1169 => 445,  1162 => 443,  1157 => 440,  1151 => 439,  1149 => 438,  1143 => 437,  1136 => 435,  1131 => 433,  1124 => 428,  1119 => 427,  1116 => 426,  1111 => 424,  1108 => 423,  1106 => 422,  1103 => 421,  1098 => 420,  1095 => 419,  1090 => 417,  1087 => 416,  1085 => 415,  1078 => 413,  1072 => 409,  1067 => 408,  1064 => 407,  1059 => 405,  1056 => 404,  1054 => 403,  1051 => 402,  1046 => 401,  1043 => 400,  1038 => 398,  1035 => 397,  1033 => 396,  1026 => 394,  1021 => 392,  1015 => 388,  1009 => 387,  1007 => 386,  1001 => 385,  994 => 383,  988 => 379,  983 => 378,  980 => 377,  975 => 375,  972 => 374,  970 => 373,  967 => 372,  962 => 371,  959 => 370,  954 => 368,  951 => 367,  949 => 366,  942 => 364,  937 => 362,  928 => 355,  922 => 354,  914 => 351,  911 => 350,  903 => 347,  900 => 346,  897 => 345,  893 => 344,  886 => 340,  879 => 335,  873 => 334,  865 => 331,  862 => 330,  854 => 327,  851 => 326,  848 => 325,  844 => 324,  837 => 320,  831 => 316,  826 => 315,  823 => 314,  818 => 312,  815 => 311,  813 => 310,  810 => 309,  805 => 308,  802 => 307,  797 => 305,  794 => 304,  792 => 303,  785 => 301,  778 => 296,  772 => 295,  764 => 292,  761 => 291,  753 => 288,  750 => 287,  747 => 286,  743 => 285,  734 => 281,  727 => 276,  721 => 275,  713 => 272,  710 => 271,  702 => 268,  699 => 267,  696 => 266,  692 => 265,  685 => 261,  678 => 256,  672 => 255,  664 => 252,  661 => 251,  653 => 248,  650 => 247,  647 => 246,  643 => 245,  636 => 241,  626 => 234,  619 => 229,  613 => 228,  605 => 225,  602 => 224,  594 => 221,  591 => 220,  588 => 219,  584 => 218,  577 => 214,  572 => 211,  567 => 209,  559 => 207,  554 => 206,  549 => 205,  544 => 203,  539 => 202,  537 => 201,  534 => 200,  530 => 199,  524 => 198,  521 => 197,  519 => 196,  511 => 193,  504 => 191,  495 => 187,  488 => 185,  481 => 181,  475 => 180,  471 => 179,  462 => 175,  457 => 173,  452 => 170,  446 => 169,  444 => 168,  438 => 167,  433 => 165,  428 => 162,  422 => 161,  420 => 160,  414 => 159,  409 => 157,  400 => 153,  393 => 151,  388 => 148,  382 => 147,  380 => 146,  374 => 145,  369 => 143,  364 => 140,  358 => 139,  356 => 138,  350 => 137,  345 => 135,  340 => 132,  334 => 131,  332 => 130,  326 => 129,  321 => 127,  314 => 123,  310 => 122,  303 => 118,  293 => 113,  286 => 109,  276 => 101,  270 => 100,  262 => 97,  259 => 96,  251 => 93,  248 => 92,  245 => 91,  241 => 90,  234 => 86,  226 => 80,  220 => 79,  212 => 76,  209 => 75,  201 => 72,  198 => 71,  195 => 70,  191 => 69,  184 => 65,  175 => 61,  170 => 59,  161 => 55,  156 => 53,  150 => 49,  144 => 48,  142 => 47,  136 => 46,  131 => 44,  123 => 39,  119 => 38,  115 => 37,  111 => 36,  107 => 35,  103 => 34,  99 => 33,  94 => 31,  88 => 28,  84 => 26,  76 => 22,  73 => 21,  65 => 17,  63 => 16,  58 => 13,  47 => 11,  43 => 10,  38 => 8,  32 => 7,  28 => 6,  19 => 1,);
     }
 }
 /* {{ header }}{{ column_left }}*/
@@ -3731,6 +3768,7 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
 /*                   <div class="text-danger">{{ error_meta_title }}</div>*/
 /*                   {% endif %} </div>*/
 /*               </div>*/
+/* */
 /*               <div class="form-group">*/
 /*                 <label class="col-sm-2 control-label" for="input-meta-description">{{ entry_meta_description }}</label>*/
 /*                 <div class="col-sm-10">*/
@@ -3786,6 +3824,25 @@ class __TwigTemplate_58b4d14fb1db843141a983974e30608272914b9fec963cca62734942f10
 /*               </div>*/
 /*             </div>*/
 /*             <div class="tab-pane" id="tab-store">*/
+/*               <div class="form-group">*/
+/*                 <label class="col-sm-2 control-label" for="input-partnership-text">*/
+/*                     {{ entry_partnership_text }}*/
+/*                 </label>*/
+/*                 <div class="col-sm-10">*/
+/*                   <textarea name="config_partnership_text" id="input-partnership-text" rows="5"*/
+/*                             placeholder="{{ entry_partnership_text }}" class="form-control">{{ config_partnership_text }}</textarea>*/
+/*                 </div>*/
+/*               </div>*/
+/*               <div class="form-group">*/
+/*                 <label for="input-comment" class="col-sm-2 control-label">*/
+/*                     {{ entry_partnership_tax }}*/
+/*                 </label>*/
+/*                 <div class="col-sm-10">*/
+/*                   <textarea name="config_partnership_tax" id="input-partnership-tax" rows="5"*/
+/*                             placeholder="{{ entry_partnership_tax }}"*/
+/*                             class="form-control">{{ config_partnership_tax }}</textarea>*/
+/*                 </div>*/
+/*               </div>*/
 /*               <div class="form-group required">*/
 /*                 <label class="col-sm-2 control-label" for="input-name">{{ entry_name }}</label>*/
 /*                 <div class="col-sm-10">*/
